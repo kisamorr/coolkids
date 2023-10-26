@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Android.Gradle;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 moveDirection;
 
     private CharacterController controller;
+    private PlayerLook looking;
 
     private Vector2 movement;
     private Vector3 playerVelocity;
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerControls = new PlayerInputActions();
+        looking = GetComponent<PlayerLook>();
     }
 
     // Start is called before the first frame update
@@ -67,7 +70,10 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
     }
-
+    private void LateUpdate()
+    {
+        looking.ProcessLook(look.ReadValue<Vector2>());
+    }
     void FixedUpdate()
     {
         movement = move.ReadValue<Vector2>();
@@ -94,7 +100,6 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded)
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
-            print("jumping");
         }
     }
 }
