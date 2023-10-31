@@ -35,15 +35,17 @@ public class GameManager : MonoBehaviour
         // inventory can be opened and closed
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (InventorySystem.activeInHierarchy)
+            if (InventorySystem.activeInHierarchy) // exits pause menu
             {
                 print("active");
                 InventorySystem.SetActive(false);
+                Time.timeScale = 1;
             }
 
-            else if (!InventorySystem.activeInHierarchy)
+            else if (!InventorySystem.activeInHierarchy) // opens pause menu
             {
                 InventorySystem.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }

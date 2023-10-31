@@ -72,10 +72,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void LateUpdate()
     {
-        if (!GameManager.instance.InventorySystem.activeInHierarchy)
-        {
-            looking.ProcessLook(look.ReadValue<Vector2>());
-        }
+        looking.ProcessLook(look.ReadValue<Vector2>());
     }
     void FixedUpdate()
     {
