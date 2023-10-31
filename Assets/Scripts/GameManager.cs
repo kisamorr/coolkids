@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public InventoryItem[] inventoryItems;
 
     public GameObject InventorySystem;
+    public int itemsObtained = 0;
 
     private void Awake()
     {
