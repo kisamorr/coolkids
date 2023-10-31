@@ -501,6 +501,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265668913}
   m_CullTransparentMesh: 1
+--- !u!1 &334425697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6439307572222783033, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+  m_PrefabInstance: {fileID: 3058267181165414598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &356628980 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1549318373816929939, guid: c5e1993790e0de748a9b0e58db61e544, type: 3}
@@ -800,6 +805,7 @@ MonoBehaviour:
   - {fileID: 79115433}
   - {fileID: 2092990334}
   inventoryItems: []
+  player: {fileID: 334425697}
   InventorySystem: {fileID: 483695008}
   itemsObtained: 0
 --- !u!4 &441449669
@@ -2108,6 +2114,14 @@ PrefabInstance:
     - target: {fileID: 7249960255592712935, guid: c5e1993790e0de748a9b0e58db61e544, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249960255592712935, guid: c5e1993790e0de748a9b0e58db61e544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187934392618895381, guid: c5e1993790e0de748a9b0e58db61e544, type: 3}
+      propertyPath: m_text
+      value: Quit
       objectReference: {fileID: 0}
     - target: {fileID: 8261750822212800509, guid: c5e1993790e0de748a9b0e58db61e544, type: 3}
       propertyPath: m_Pivot.x

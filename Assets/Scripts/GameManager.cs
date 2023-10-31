@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Image[] imageSlots;
     public InventoryItem[] inventoryItems;
 
+    public GameObject player;
     public GameObject InventorySystem;
     public int itemsObtained = 0;
 
