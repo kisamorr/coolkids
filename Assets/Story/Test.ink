@@ -2,9 +2,8 @@
 -> main
 
 === main ===
-#you
+#them
 This is a demo!
-
 *[Really?] -> firstChoice
 
 === firstChoice ===
@@ -17,7 +16,7 @@ Yup we have options!
 *[Um, cool I don't really care.] -> thirdChoice
 
 === secondChoice ===
-#you
+#them
 Come back later for more! 
 
 -> END
