@@ -14,9 +14,7 @@ public class StoryManager : MonoBehaviour
     public static StoryManager Instance;
     public TextAsset inkJson;
     public TextMeshProUGUI rightText;
-    //public Button[] optionButtons;
     public GameObject storyPanel;
-    //public TextMeshProUGUI[] optionButtonLabels;
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
     //public BackgroundLibrary backgroundLibrary;
