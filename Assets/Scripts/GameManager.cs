@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -10,10 +11,12 @@ public class GameManager : MonoBehaviour
 
     public Image[] imageSlots;
     public InventoryItem[] inventoryItems;
+    public TextMeshProUGUI[] noteSlots;
 
     public GameObject player;
     public GameObject InventorySystem;
     public int itemsObtained = 0;
+    public int notesObtained = 0;
 
     public Button MessagingApp;
     public Button MessagingAppExit;

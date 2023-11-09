@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6d9f3358042af40a49881c0e4234e9, type: 3}
   m_Name: testNote
   m_EditorClassIdentifier: 
-  note: I hate having long hair, but Mom doesn't want me to cut it. She thinks it
-    makes me look prettier.
+  noteText: stuff

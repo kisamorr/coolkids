@@ -11,5 +11,6 @@ public class Collectible : MonoBehaviour
         GameManager.instance.imageSlots[GameManager.instance.itemsObtained].sprite = collectibleSprite;
         GameManager.instance.itemsObtained++;
         gameObject.SetActive(false);
+        //Note.instance.ObtainNote(); -> put this wherever to obtain note (thanks kisa)
     }
 }
