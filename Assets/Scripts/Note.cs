@@ -21,4 +21,7 @@ public class Note : MonoBehaviour
         GameManager.instance.noteSlots[GameManager.instance.notesObtained].text = note.noteText;
         GameManager.instance.notesObtained++;
     }
+
+    // PUT THIS IN OTHER SCRIPTS TO TRIGGER OBTAINING A NOTE (thanks kisa):
+    // Note.instance.ObtainNote();
 }
