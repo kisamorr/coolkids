@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - NPC
-  - Option
-  - StoryPanel
+  - Collectible
+  - Ladder
   layers:
   - Default
   - TransparentFX
