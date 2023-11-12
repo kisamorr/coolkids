@@ -8,7 +8,7 @@ Mom! I’m back!
 #them
  ...
  
- #them
+#them
  Oh, your back. Already?
 
 #them
@@ -18,7 +18,7 @@ Mom! I’m back!
  
 === firstChoice ===
 
- #your
+#you
 I talked to them, Mom. I’m not rude.
 
 #them
@@ -93,19 +93,19 @@ Mom, I’ve told you before I am not looking for anyone right now. Why can’t y
 #them
 Those clothes were enough for me. I need you to have standards for what you look like Reyes. Such terrible things you put on…
 
-#you 
+#you
  Again, with my hair...
  
  ->YouTalkAboutMe
  
  === Tia ===
- #you
+#you
   Tia Maria told me you told her I want to cut it all off.
   
-  #you
+#you
   I said I wanted to go mid length, not SHORT!
   
-  #you 
+#you 
   You made me seem like a sellout! Tia even begged me not to cut it all off!
 
 -> Continue

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf3b16c8908c944195dd6d83f18a2bd, type: 3}
+  m_Name: StoryAsset
+  m_EditorClassIdentifier: 
+  inkJson:
+  - {fileID: 4900000, guid: 3aa3d0625a58d2449a34b51dd4bee316, type: 3}
+  - {fileID: 4900000, guid: f9b7fb90f1c667b418aad0305992d310, type: 3}

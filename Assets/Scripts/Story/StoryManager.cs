@@ -75,19 +75,23 @@ public class StoryManager : MonoBehaviour
 
     void SetupOptions(string[] options)
     {
-        for (int i = 0; i < 4; i++)
+        foreach (string option in options)
         {
-            if (options[i] == null)
+            for (int i = 0; i < 4; i++)
             {
-                optionUI[i].SetVisible(false);
-            }
-            else
-            {
-                optionUI[i].SetVisible(true);
-                optionUI[i].SetOptionText(options[i]);
-                optionUI[i].SetSelected(i == currentOption);
+                if (options[i] == null)
+                {
+                    optionUI[i].SetVisible(false);
+                }
+                else
+                {
+                    optionUI[i].SetVisible(true);
+                    optionUI[i].SetOptionText(options[i]);
+                    optionUI[i].SetSelected(i == currentOption);
+                }
             }
         }
+        
     }
 
     public void OnOptionClicked(int option)
