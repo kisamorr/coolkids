@@ -50,8 +50,28 @@ Tita Angela: Oh right, you know we don’t get paid a lot honey, why didn’t yo
 *[Uhm-] -> Badgering
 
 === Badgering ===
+#them
+Tita Andrea:Carmen also says you’ve been feeling off lately? Is that why your style is getting so bad? Do you need help with anything?
 
+#them
+Tita Angela: Andrea, you know how tough it is to be a girl these days! I feel for you honey, you can stop by anytime and we can do some confidence building! Make-over?
 
+*[I would love to stay...] -> GetOut
+
+=== GetOut ===
+#you 
+I would love to stay and chat more with you guys, but I have to find Don Luis to give him his delivery. Do you guys have any idea where he could be?
+
+#them
+Tita Andrea: Ugh that Don Luis, he’s at the square with his buddies of course.
+
+#them
+Tita Angela: Don’t stay there for too long and get home before it gets dark, honey.
+
+#you 
+Thank you Titas. I’ll be back to visit you guys soon.
+
+-> END
 
 
 
