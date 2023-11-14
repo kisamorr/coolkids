@@ -75,6 +75,7 @@ public class StoryTrigger : MonoBehaviour
         {
             collectible.GiveItem();
             note.ObtainNote();
+            dialogueFinished = true;
         }
     }
 }

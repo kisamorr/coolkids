@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class MomShowUp : MonoBehaviour
 {
-    public GameObject collectible1, collectible2, collectible3, momObject;
+    public StoryTrigger titaTrigger, guysTrigger, mariaTrigger;
+    public GameObject momObject;
 
     // Update is called once per frame
     void Update()
     {
-        if (!collectible1.activeInHierarchy && !collectible2.activeInHierarchy && !collectible3.activeInHierarchy)
+        if (titaTrigger.dialogueFinished && guysTrigger.dialogueFinished && mariaTrigger.dialogueFinished)
         {
             momObject.SetActive(true);
         }
