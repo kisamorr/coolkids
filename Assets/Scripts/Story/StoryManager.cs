@@ -96,7 +96,7 @@ public class StoryManager : MonoBehaviour
 
     public void OnOptionClicked(int option)
     {
-        Debug.LogError(option + " not Work");
+        //Debug.LogError(option + " not Work");
         rightText.text = "";
         leftText.text = "";
 
