@@ -7,6 +7,7 @@ public class Collectible : MonoBehaviour
     public Sprite collectibleSprite;
     public Note note;
     private int currentSlotPosition;
+    public bool isObtained = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +16,7 @@ public class Collectible : MonoBehaviour
         print("slot position of this item is " + currentSlotPosition);
         GameManager.instance.itemsObtained++;
         print("current itemsObtained number is " + GameManager.instance.itemsObtained);
+        isObtained = true;
         gameObject.SetActive(false);
     }
 

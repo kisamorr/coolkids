@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Ink.Runtime;
 
-public class StoryTrigger : MonoBehaviour
+public class ArgumentTrigger : MonoBehaviour
 {
-    public StoryTrigger instance;
+    public ArgumentTrigger instance;
     public GameObject visualCue;
     private bool playerInRange;
     public bool dialogueFinished = false;
@@ -14,10 +14,6 @@ public class StoryTrigger : MonoBehaviour
     public PlayerInputActions playerControls;
     public InputAction interact;
     public StoryManager StoryManager;
-
-    public Note note;
-    public Collectible collectible;
-    public bool noteInvolved;
 
     private void Awake()
     {
@@ -39,7 +35,7 @@ public class StoryTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (collectible.isObtained == true && playerInRange)
+        if (playerInRange)
         {
             visualCue.SetActive(true);
 
@@ -67,15 +63,5 @@ public class StoryTrigger : MonoBehaviour
     {
         playerInRange = false;
         StoryManager.Instance.ExitStoryMode();
-
-        // if the player receives a note from this interaction (basically all interactions except arguments)
-        // noteInvolved MUST BE CHECKED IN EDITOR TO DETERMINE THIS
-        if (noteInvolved == true)
-        {
-            collectible.GiveItem();
-            collectible.isObtained = false;
-            note.ObtainNote();
-            dialogueFinished = true;
-        }
     }
 }

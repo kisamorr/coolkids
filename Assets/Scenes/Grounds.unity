@@ -811,6 +811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectibleSprite: {fileID: 21300008, guid: 358b5d9f23bc9413e87c9948acc67ee1, type: 3}
   note: {fileID: 432429755}
+  isObtained: 0
 --- !u!135 &432429752
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1262,6 +1263,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 761427180965005103, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
   m_PrefabInstance: {fileID: 1648355011538902526}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &538176545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538176538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c571c08e8bdf54e9caa353e77ae558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 538176545}
+  visualCue: {fileID: 937510156}
+  dialogueFinished: 0
+  inkJson: {fileID: 4900000, guid: f9b7fb90f1c667b418aad0305992d310, type: 3}
+  interact:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0436a540-a88a-42eb-87b2-d5c76a933d7e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  StoryManager: {fileID: 271813200}
 --- !u!43 &558785425
 Mesh:
   m_ObjectHideFlags: 0
@@ -1905,6 +1932,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &937510156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1287308377634401829, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
+  m_PrefabInstance: {fileID: 1648355011538902526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &963194227 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3906837349812131876, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
@@ -2798,6 +2830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectibleSprite: {fileID: 21300012, guid: 358b5d9f23bc9413e87c9948acc67ee1, type: 3}
   note: {fileID: 1200465809}
+  isObtained: 0
 --- !u!135 &1200465811
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5377,10 +5410,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2264996597959462824, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 761427180965005103, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 538176545}
   m_SourcePrefab: {fileID: 100100000, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
 --- !u!1001 &2578071539105692610
 PrefabInstance:
