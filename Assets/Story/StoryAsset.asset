@@ -15,3 +15,6 @@ MonoBehaviour:
   inkJson:
   - {fileID: 4900000, guid: 3aa3d0625a58d2449a34b51dd4bee316, type: 3}
   - {fileID: 4900000, guid: f9b7fb90f1c667b418aad0305992d310, type: 3}
+  - {fileID: 4900000, guid: d204b9ed0cf68c1428b7599e65a5e571, type: 3}
+  - {fileID: 4900000, guid: fb110472a4e04cb42a5d48f984167f93, type: 3}
+  - {fileID: 4900000, guid: 3a723b2c87ea1be4eb0ee25b6d764d07, type: 3}
