@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d6d9f3358042af40a49881c0e4234e9, type: 3}
-  m_Name: titaNote
+  m_Name: hairNote
   m_EditorClassIdentifier: 
-  noteText: I want to cut my hair short.
+  noteText: I just want my hair to be short.
