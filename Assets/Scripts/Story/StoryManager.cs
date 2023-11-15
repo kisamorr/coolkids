@@ -13,8 +13,9 @@ public class StoryManager : MonoBehaviour
 {
     public static StoryManager Instance;
     public TextAsset inkJson;
-    public TextMeshProUGUI rightText, leftText;
-    public GameObject storyPanel;
+    public TextMeshProUGUI rightText, leftText, leftNameTagText, rightNameTagText;
+    public Image rightProfile, leftProfile;
+    public GameObject storyPanel, rightNameTag, leftNameTag;
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
     //public BackgroundLibrary backgroundLibrary;
@@ -124,6 +125,8 @@ public class StoryManager : MonoBehaviour
 
             if (tag.StartsWith("them"))
             {
+                rightNameTag.SetActive(true);
+                leftNameTag.SetActive(false);
                 rightText.text = text;
                 rightText.color = Color.blue;
                 didSomething = true;
@@ -132,9 +135,19 @@ public class StoryManager : MonoBehaviour
 
             if (tag.StartsWith("you"))
             {
+                leftNameTag.SetActive(true);
+                rightNameTag.SetActive(false);
                 leftText.text = text;
                 leftText.color = Color.red;
                 didSomething = true;
+            }
+
+            if (tag.StartsWith("name;"))
+            {
+                string[] parts = tag.Split(';');
+                string characterName = parts[1];
+
+                rightNameTagText.text = characterName;
             }
 
             /*if (tag.StartsWith("sound;"))
