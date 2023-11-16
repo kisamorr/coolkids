@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c5ef88d621a0bdd4cb85ca45767b5c68
+guid: 27a6687780925904ba43758b2b75a220
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_0
+      name: Reyes Walk Sprite_0
       rect:
         serializedVersion: 2
-        x: 745
-        y: 1223
-        width: 237
-        height: 390
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5924dd71ca0eaca4d8f2ca7c5dfdd211
-      internalID: 1645535569
+      spriteID: 96d1ea01764126940a549689cf0a92c4
+      internalID: -1951084194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_1
+      name: Reyes Walk Sprite_1
       rect:
         serializedVersion: 2
-        x: 1322
-        y: 1223
-        width: 236
-        height: 390
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95912289a2ba8714bbbdfe656a96cdea
-      internalID: 1889274590
+      spriteID: 881c2e5ad71c6774ea0014cc9bd1fe39
+      internalID: 1025633418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_2
+      name: Reyes Walk Sprite_2
       rect:
         serializedVersion: 2
-        x: 1915
-        y: 1223
-        width: 165
-        height: 390
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a91014c72e7346439ee96a02ea95f4a
-      internalID: 1789978252
+      spriteID: 11992817c156ff0468f6a91f4711185d
+      internalID: -375273413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_3
+      name: Reyes Walk Sprite_3
       rect:
         serializedVersion: 2
-        x: 2528
-        y: 1223
-        width: 164
-        height: 390
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c8f2d621b5aa14438353cddffa06d53
-      internalID: -400232366
+      spriteID: 3f3e6efc41703bf4fa90d00b2be29788
+      internalID: 625252250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_6
+      name: Reyes Walk Sprite_4
       rect:
         serializedVersion: 2
-        x: 737
-        y: 628
-        width: 263
-        height: 408
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fa779188e369874a83b4d19b46461c3
-      internalID: -533543084
+      spriteID: b360a07d27c32d2488e8608925627e8c
+      internalID: -720695553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_7
+      name: Reyes Walk Sprite_5
       rect:
         serializedVersion: 2
-        x: 1304
-        y: 628
-        width: 263
-        height: 408
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdc4e8d6b169564418908d8119654fd3
-      internalID: 1746943108
+      spriteID: 8dcc18e1c8e98604391f68b3b07bd2e4
+      internalID: -1937337984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_8
+      name: Reyes Walk Sprite_6
       rect:
         serializedVersion: 2
-        x: 1915
-        y: 647
-        width: 165
-        height: 389
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5b92c34751b8574f84e6d36245a1c46
-      internalID: -1837908679
+      spriteID: 7999ebc4bcfaba4479343ee20afb8f86
+      internalID: -842364757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_13
+      name: Reyes Walk Sprite_7
       rect:
         serializedVersion: 2
-        x: 728
-        y: 53
-        width: 263
-        height: 407
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7440f69d5ac42ef4a9d5677c3f8b0811
-      internalID: -413043969
+      spriteID: be41701e98e4a3d4c80fe40fb0e8c36d
+      internalID: -1289623375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REYES-sheet x900 v2_14
+      name: Reyes Walk Sprite_8
       rect:
         serializedVersion: 2
-        x: 1313
-        y: 53
-        width: 263
-        height: 407
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +292,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41d6bb4d4d01fb4a9a03b10ef167f7f
-      internalID: -1691019512
+      spriteID: 0b4fbf832acfcb940b8e6591ea902d94
+      internalID: 1018935420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reyes Walk Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b946962e74dc81b48becb569a11178e7
+      internalID: 1972231066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reyes Walk Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89880a143f9ed1846b7eb022b9e2723c
+      internalID: 1420796350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reyes Walk Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf28b9467ccf3d40bdd37ed6441d7b9
+      internalID: -1130141463
       vertices: []
       indices: 
       edges: []
@@ -301,7 +364,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 114b751e70e4d3f41ad2fb957714668d
+    spriteID: 784ebf9d88c6ff44bab8acb9dfc4ded5
     internalID: 0
     vertices: []
     indices: 
@@ -309,23 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      REYES-sheet x900 v2_0: 1645535569
-      REYES-sheet x900 v2_1: 1889274590
-      REYES-sheet x900 v2_10: -679723264
-      REYES-sheet x900 v2_11: 2076305806
-      REYES-sheet x900 v2_12: -1730876741
-      REYES-sheet x900 v2_13: -413043969
-      REYES-sheet x900 v2_14: -1691019512
-      REYES-sheet x900 v2_15: -839051115
-      REYES-sheet x900 v2_16: 885770793
-      REYES-sheet x900 v2_2: 1789978252
-      REYES-sheet x900 v2_3: -400232366
-      REYES-sheet x900 v2_4: -2147462130
-      REYES-sheet x900 v2_5: 2086031387
-      REYES-sheet x900 v2_6: -533543084
-      REYES-sheet x900 v2_7: 1746943108
-      REYES-sheet x900 v2_8: -1837908679
-      REYES-sheet x900 v2_9: 203455578
+      Reyes Walk Sprite_0: -1951084194
+      Reyes Walk Sprite_1: 1025633418
+      Reyes Walk Sprite_10: 1420796350
+      Reyes Walk Sprite_11: -1130141463
+      Reyes Walk Sprite_2: -375273413
+      Reyes Walk Sprite_3: 625252250
+      Reyes Walk Sprite_4: -720695553
+      Reyes Walk Sprite_5: -1937337984
+      Reyes Walk Sprite_6: -842364757
+      Reyes Walk Sprite_7: -1289623375
+      Reyes Walk Sprite_8: 1018935420
+      Reyes Walk Sprite_9: 1972231066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
