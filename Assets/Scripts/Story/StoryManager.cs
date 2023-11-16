@@ -23,6 +23,7 @@ public class StoryManager : MonoBehaviour
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
+    public InputAction Continue;
 
     void Awake()
     {
@@ -56,6 +57,9 @@ public class StoryManager : MonoBehaviour
         }
 
         SetupOptions(options);
+
+        //ContinueStory();
+        
     }
 
     public void EnterStoryMode(TextAsset inkJSON)
