@@ -13,16 +13,15 @@ public class StoryManager : MonoBehaviour
 {
     public static StoryManager Instance;
     public TextAsset inkJson;
-    public TextMeshProUGUI rightText;
-    //public Button[] optionButtons;
-    public GameObject storyPanel;
-    //public TextMeshProUGUI[] optionButtonLabels;
+    public TextMeshProUGUI rightText, leftText, leftNameTagText, rightNameTagText;
+    public Image rightProfile, leftProfile;
+    public GameObject storyPanel, rightNameTag, leftNameTag;
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
     //public BackgroundLibrary backgroundLibrary;
 
     public Story ourStory;
-    public OptionUI[] optionUIs;
+    public OptionUI[] optionUI;
     int currentOption;
 
     void Awake()
@@ -42,7 +41,7 @@ public class StoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string[] options = new string[3];
+        string[] options = new string[4];
 
         if (ourStory.canContinue)
         {
@@ -77,25 +76,30 @@ public class StoryManager : MonoBehaviour
 
     void SetupOptions(string[] options)
     {
-        for (int i = 0; i < 3; i++)
+        foreach (string option in options)
         {
-            if (options[i] == null)
+            for (int i = 0; i < 4; i++)
             {
-                optionUIs[i].SetVisible(false);
-            }
-            else
-            {
-                optionUIs[i].SetVisible(true);
-                optionUIs[i].SetOptionText(options[i]);
-                optionUIs[i].SetSelected(i == currentOption);
+                if (options[i] == null)
+                {
+                    optionUI[i].SetVisible(false);
+                }
+                else
+                {
+                    optionUI[i].SetVisible(true);
+                    optionUI[i].SetOptionText(options[i]);
+                    optionUI[i].SetSelected(i == currentOption);
+                }
             }
         }
+        
     }
 
-    public void OnOptionClicked(int index)
+    public void OnOptionClicked(int option)
     {
-        Debug.LogError(index + "npt Work");
+        //Debug.LogError(option + " not Work");
         rightText.text = "";
+        leftText.text = "";
 
         if (ourStory.canContinue)
         {
@@ -103,7 +107,7 @@ public class StoryManager : MonoBehaviour
         }
         else
         {
-            ourStory.ChooseChoiceIndex(index);
+            ourStory.ChooseChoiceIndex(option);
             AdvanceStory();
         }
         currentOption = 0;
@@ -119,9 +123,32 @@ public class StoryManager : MonoBehaviour
         {
             bool didSomething = false;
 
-            rightText.text = text;
-            rightText.color = Color.red;
-            didSomething = true;
+            if (tag.StartsWith("them"))
+            {
+                rightNameTag.SetActive(true);
+                leftNameTag.SetActive(false);
+                rightText.text = text;
+                rightText.color = Color.blue;
+                didSomething = true;
+            }
+
+
+            if (tag.StartsWith("you"))
+            {
+                leftNameTag.SetActive(true);
+                rightNameTag.SetActive(false);
+                leftText.text = text;
+                leftText.color = Color.red;
+                didSomething = true;
+            }
+
+            if (tag.StartsWith("name;"))
+            {
+                string[] parts = tag.Split(';');
+                string characterName = parts[1];
+
+                rightNameTagText.text = characterName;
+            }
 
             /*if (tag.StartsWith("sound;"))
             {

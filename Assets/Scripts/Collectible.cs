@@ -5,23 +5,24 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     public Sprite collectibleSprite;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Note note;
+    private int currentSlotPosition;
+    public bool isObtained = false;
 
     private void OnTriggerEnter(Collider other)
     {
         GameManager.instance.imageSlots[GameManager.instance.itemsObtained].sprite = collectibleSprite;
+        currentSlotPosition = GameManager.instance.itemsObtained;
+        print("slot position of this item is " + currentSlotPosition);
         GameManager.instance.itemsObtained++;
+        print("current itemsObtained number is " + GameManager.instance.itemsObtained);
+        isObtained = true;
         gameObject.SetActive(false);
+    }
+
+    public void GiveItem()
+    {
+        print("giving item");
+        GameManager.instance.imageSlots[currentSlotPosition].sprite = null;
     }
 }

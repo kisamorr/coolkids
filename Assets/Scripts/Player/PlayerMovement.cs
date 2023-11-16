@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -22,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10f;
     public float runSpeed = 15f;
     public float jumpHeight = 6f;
+
+    public ContactPoint[] contacts;
 
     private void Awake()
     {
@@ -100,5 +103,21 @@ public class PlayerMovement : MonoBehaviour
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
         }
+    }
+
+    private void OnColliderEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Ladder")
+        {
+            print("collided with ladder");
+        }
+        /*if (collision.gameObject.tag == "Ladder" && Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space))
+        {
+            print("collided with ladder");
+            ContactPoint contact = collision.contacts[0];
+            Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+            Vector3 pos = contact.point;
+            gameObject.transform.rotation *= rot;
+        }*/
     }
 }
