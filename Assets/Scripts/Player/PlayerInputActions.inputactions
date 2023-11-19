@@ -53,7 +53,11 @@
                 {
                     "name": "Continue",
                     "type": "Button",
+<<<<<<< HEAD
                     "id": "5193a378-32d7-4a94-a6b7-439796481a78",
+=======
+                    "id": "8cedfa99-0ed8-40c6-ae7b-7ab33a0596c8",
+>>>>>>> main
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -272,7 +276,11 @@
                 },
                 {
                     "name": "",
+<<<<<<< HEAD
                     "id": "499ef6e3-2b31-4b14-b3f8-7096b17d36db",
+=======
+                    "id": "ac7b6fac-61e8-4494-916d-e68d5a3e5c4b",
+>>>>>>> main
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
@@ -283,7 +291,11 @@
                 },
                 {
                     "name": "",
+<<<<<<< HEAD
                     "id": "de68194c-4a6c-409f-9b64-00f7c7cb1999",
+=======
+                    "id": "547ced13-35d6-4c52-816f-c7f4f86d3be0",
+>>>>>>> main
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",

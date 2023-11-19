@@ -6393,6 +6393,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2111852021}
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+<<<<<<< HEAD
       propertyPath: Continue.m_Id
       value: 5a456a87-3158-4508-b75c-b4e7158d5434
       objectReference: {fileID: 0}
@@ -6416,6 +6417,11 @@ PrefabInstance:
       propertyPath: Continue.m_SingletonActionBindings.Array.data[0].m_Action
       value: Continue
       objectReference: {fileID: 0}
+=======
+      propertyPath: continueAction
+      value: 
+      objectReference: {fileID: -3851016723319972954, guid: e62b04c5409a52541927ec49c1aa02d7, type: 3}
+>>>>>>> main
     - target: {fileID: 7941864094787620718, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6626,3 +6632,4 @@ SceneRoots:
   - {fileID: 1724471337}
   - {fileID: 1651455368}
   - {fileID: 1343340588}
+  - {fileID: 1400809564}
