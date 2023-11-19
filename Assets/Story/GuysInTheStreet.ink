@@ -14,9 +14,12 @@ Unknown 1: Aye, who’s this beauty, Luis? Daughter? Niece? Girlfriend? HAHAHA!
 #them
 Unknown 2: Oh, don’t kid like that Roberto! Obviously, this is Carmen’s daughter. As beautiful as ever…
 
-*[Uhm...] -> Creepy
+-> Creepy
 
 === Creepy ===
+#you
+Uhm...
+
 #them
 Don Luis: (whispering)  Please excuse them, Reyes. Roberto and Victor always act this way. It’s not personal.
 
@@ -29,9 +32,12 @@ Don Roberto: I am Roberto! Nice to meet you… Reyes. What a pretty name.
 #them
 Victor: These oldheads don’t know anything about how to talk to girls, huh! Oi, Reyes, you’ve grown up! It’s me Victor, I fixed your Mom’s pipes that one time years ago.
 
-*[Oh, hel-] -> WeirdAgain
+-> WeirdAgain
 
 === WeirdAgain ===
+#you
+Oh, hello-
+
 #them
 DON ROBERTO: I wouldn’t mind fixing that Senora's pipes next time. Let her know for me, huh, Reyes!
 
@@ -44,9 +50,12 @@ Don Luis: Don’t talk about Carmen in front of her child like that, hijo.
 #them
 Don Luis: So, how’s it been going, Reyes? You have a boyfriend yet?
 
-*[Oh, uh-] -> Uncomfy
+-> Uncomfy
 
 === Uncomfy ===
+#you
+Oh, uh-
+
 #them
 DON ROBERTO: Stop pimping out your son like that, Luis! Maybe Reyes has someone already. Do ya?
 
@@ -59,9 +68,12 @@ DON ROBERTO: Now, you’re pimping that boy out! Maybe Reyes likes older guys?
 #them
 More Cackling~
 
-*[Well I-] -> DenyYourWeirdness
+-> DenyYourWeirdness
 
 === DenyYourWeirdness ===
+#you
+Well, I-
+
 #them
 DON LUIS: My son IS coming by to visit next week, if you are interested…
 
@@ -71,7 +83,7 @@ Uhm, I’m not looking for anyone in particular right now, Don. Thank you for of
 #them
 DON LUIS: Oh, c’mon. At least meet him for a bit, see how you like him? Hm?
 
-*[Yea, no.] -> NoThanks
+ -> NoThanks
 
 === NoThanks ===
 #you
@@ -86,11 +98,11 @@ VICTOR: Don, you always throw yourself at these youngins!
 #them
 More annoying cackling~
 
-*[Oh god] -> Leave
+ -> Leave
 
 === Leave ===
 #them
 DON LUIS: Well, gracias for the supplies, hija. Tell Carmen I say hi.
 
-*[Bye!] -> END
+ -> END
 

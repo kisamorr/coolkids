@@ -11,6 +11,7 @@ using System.Runtime.ExceptionServices;
 
 public class StoryManager : MonoBehaviour
 {
+    public InputActionReference continueAction;
     public static StoryManager Instance;
     public TextAsset inkJson;
     public TextMeshProUGUI rightText, leftText, leftNameTagText, rightNameTagText;
@@ -36,6 +37,9 @@ public class StoryManager : MonoBehaviour
         storyPanel.SetActive(false);
         ourStory = new Story(inkJson.text);
         AdvanceStory();
+
+        continueAction.action.performed += (a) => OnOptionClicked(0);
+
     }
 
     // Update is called once per frame
@@ -45,7 +49,7 @@ public class StoryManager : MonoBehaviour
 
         if (ourStory.canContinue)
         {
-            options[0] = "Continue";
+            //options[0] = "Continue";
         }
         else
         {
@@ -72,6 +76,7 @@ public class StoryManager : MonoBehaviour
         storyIsPlaying = false;
         storyPanel.SetActive(false);
         //storyText.text = "";
+        //StoryTrigger.instance.dialogueIsFinished = true
     }
 
     void SetupOptions(string[] options)
@@ -97,7 +102,7 @@ public class StoryManager : MonoBehaviour
 
     public void OnOptionClicked(int option)
     {
-        //Debug.LogError(option + " not Work");
+        Debug.LogError($"Similar ");
         rightText.text = "";
         leftText.text = "";
 
