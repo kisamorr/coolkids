@@ -4208,6 +4208,30 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2038335649}
+    - target: {fileID: 1455547760701403455, guid: b269201da0785a446b189a32a5c3f92b, type: 3}
+      propertyPath: Continue.m_Id
+      value: c3f88fd7-c3ee-450b-b364-24db554d02bc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455547760701403455, guid: b269201da0785a446b189a32a5c3f92b, type: 3}
+      propertyPath: Continue.m_Name
+      value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455547760701403455, guid: b269201da0785a446b189a32a5c3f92b, type: 3}
+      propertyPath: Continue.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455547760701403455, guid: b269201da0785a446b189a32a5c3f92b, type: 3}
+      propertyPath: Continue.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 40d1e286-c3ca-4724-8a3d-2a6023ad9a5b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455547760701403455, guid: b269201da0785a446b189a32a5c3f92b, type: 3}
+      propertyPath: Continue.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/enter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455547760701403455, guid: b269201da0785a446b189a32a5c3f92b, type: 3}
+      propertyPath: Continue.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Continue
+      objectReference: {fileID: 0}
     - target: {fileID: 1644094302362895615, guid: b269201da0785a446b189a32a5c3f92b, type: 3}
       propertyPath: m_Mesh
       value: 

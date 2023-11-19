@@ -36,11 +36,7 @@ Victor: These oldheads don’t know anything about how to talk to girls, huh! Oi
 
 === WeirdAgain ===
 #you
-<<<<<<< HEAD
-Oh, hel-
-=======
 Oh, hello-
->>>>>>> main
 
 #them
 DON ROBERTO: I wouldn’t mind fixing that Senora's pipes next time. Let her know for me, huh, Reyes!
@@ -76,11 +72,7 @@ More Cackling~
 
 === DenyYourWeirdness ===
 #you
-<<<<<<< HEAD
-Well I-
-=======
 Well, I-
->>>>>>> main
 
 #them
 DON LUIS: My son IS coming by to visit next week, if you are interested…
@@ -91,11 +83,7 @@ Uhm, I’m not looking for anyone in particular right now, Don. Thank you for of
 #them
 DON LUIS: Oh, c’mon. At least meet him for a bit, see how you like him? Hm?
 
-<<<<<<< HEAD
--> NoThanks
-=======
  -> NoThanks
->>>>>>> main
 
 === NoThanks ===
 #you
@@ -113,11 +101,7 @@ VICTOR: Don, you always throw yourself at these youngins!
 #them
 More annoying cackling~
 
-<<<<<<< HEAD
 -> Leave
-=======
- -> Leave
->>>>>>> main
 
 === Leave ===
 #you
@@ -126,9 +110,5 @@ scratches head~
 #them
 DON LUIS: Well, gracias for the supplies, hija. Tell Carmen I say hi.
 
-<<<<<<< HEAD
 -> END
-=======
- -> END
->>>>>>> main
 
