@@ -293,6 +293,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "I hate you",
+            "id": "59c2fa9b-453c-47cf-9704-92eb19db5127",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "30cc244e-9076-4d29-ba52-4c0e094a3bfb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "34db041d-3f39-47f3-8e06-071a725414f6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

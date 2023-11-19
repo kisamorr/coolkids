@@ -315,6 +315,34 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""I hate you"",
+            ""id"": ""59c2fa9b-453c-47cf-9704-92eb19db5127"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""30cc244e-9076-4d29-ba52-4c0e094a3bfb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""34db041d-3f39-47f3-8e06-071a725414f6"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -327,6 +355,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Continue = m_Player.FindAction("Continue", throwIfNotFound: true);
+        // I hate you
+        m_Ihateyou = asset.FindActionMap("I hate you", throwIfNotFound: true);
+        m_Ihateyou_Newaction = m_Ihateyou.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -470,6 +501,52 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // I hate you
+    private readonly InputActionMap m_Ihateyou;
+    private List<IIhateyouActions> m_IhateyouActionsCallbackInterfaces = new List<IIhateyouActions>();
+    private readonly InputAction m_Ihateyou_Newaction;
+    public struct IhateyouActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public IhateyouActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_Ihateyou_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_Ihateyou; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(IhateyouActions set) { return set.Get(); }
+        public void AddCallbacks(IIhateyouActions instance)
+        {
+            if (instance == null || m_Wrapper.m_IhateyouActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_IhateyouActionsCallbackInterfaces.Add(instance);
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+        }
+
+        private void UnregisterCallbacks(IIhateyouActions instance)
+        {
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+        }
+
+        public void RemoveCallbacks(IIhateyouActions instance)
+        {
+            if (m_Wrapper.m_IhateyouActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IIhateyouActions instance)
+        {
+            foreach (var item in m_Wrapper.m_IhateyouActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_IhateyouActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public IhateyouActions @Ihateyou => new IhateyouActions(this);
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -478,5 +555,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnMenu(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnContinue(InputAction.CallbackContext context);
+    }
+    public interface IIhateyouActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
     }
 }
