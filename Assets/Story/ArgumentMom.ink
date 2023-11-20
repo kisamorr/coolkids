@@ -14,7 +14,7 @@ Mom! I’m back!
 #them
  Did you talk to them or just deliver the food like a delivery boy?
  
- *[Yes] -> firstChoice
+  -> firstChoice
  
 === firstChoice ===
 
@@ -24,19 +24,19 @@ I talked to them, Mom. I’m not rude.
 #them
  Huff! To me you are.
 
-*[...] -> secondChoice
+-> secondChoice
 
 
 === secondChoice ===
 #them
 You never help me around the house, never ask me how I’m doing, you don’t even have a job and you complain to me about not having money. Now I have to worry about how you dress like when you were 5.
 
-*[That's not fair.] -> thirdChoice
+-> thirdChoice
 
 === thirdChoice ===
 #you
 I don’t complain about money! I told you about my student loans so I can get advice on how to pay them off.
-*[Continue] -> YouTalkAboutMe
+-> YouTalkAboutMe
 
 === YouTalkAboutMe ===
 #you
@@ -72,7 +72,7 @@ Mom, none of that matters. You crossed the line, how am I supposed to trust you 
 #them
 Reyes, I am your mother. You can’t be mad at me for talking about you.
 
-*[But there's more...] -> YouTalkAboutMe
+-> YouTalkAboutMe
 
 === ThoseGuys ===
 #you
