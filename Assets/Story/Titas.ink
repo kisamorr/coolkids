@@ -13,24 +13,18 @@
 
 #them
  Tita Andrea: Honey, I’ve been dying to talk to you! Your mom says you’re staying for a while. Why what happened with school?
- -> Questions
+ *[Well-] -> Questions
  
  === Questions ===
- #you
- Well-
- 
  #them
 Tita Angela: Did you have a hard time over there? Are you quitting?
 
 #them
  Tita Andrea: Maybe you found a boyfriend?
  
- -> MoreQuestions
+ *[No, I-] -> MoreQuestions
  
  === MoreQuestions ===
- #you
- No, I-
- 
  #them
 Tita Angela: Oh right, Don Luis was talking about his son visiting town, Reyes! Don’t tell me you found someone already?
 
@@ -45,30 +39,24 @@ Tita Andrea: Oh my gosh, she didn’t have to!
 
 #them
 Tita Angela: I was just planning to make some agua de tamarindo, tell her we say thanks, honey.
- -> Intercepted
+ *[I should g-] -> Intercepted
  
  === Intercepted ===
- #you 
- I should g-
- 
  #them
  Tita Andrea: Oh but before you go, I heard from Carmen that you didn’t like the clothes I sent you. I saw the pretty dress and I thought you would love it, what happened honey?
 
 #them
 Tita Angela: Oh right, you know we don’t get paid a lot honey, why didn’t you like it?
- -> Badgering
+*[Uhm-] -> Badgering
 
 === Badgering ===
-#you 
-Uhm...
-
 #them
 Tita Andrea:Carmen also says you’ve been feeling off lately? Is that why your style is getting so bad? Do you need help with anything?
 
 #them
 Tita Angela: Andrea, you know how tough it is to be a girl these days! I feel for you honey, you can stop by anytime and we can do some confidence building! Make-over?
 
--> GetOut
+*[I would love to stay...] -> GetOut
 
 === GetOut ===
 #you 

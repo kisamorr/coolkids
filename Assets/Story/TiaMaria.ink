@@ -11,7 +11,7 @@ Hi Tia! I’m just here to give you some supplies. Mom sent me.
 #them
 Oh well come in, hija. We haven’t talked in a while.
 
- -> ThatsWeird
+*[...] -> ThatsWeird
 
 === ThatsWeird ===
 #you
@@ -23,7 +23,7 @@ Oh ok hija! You’re so kind to your mom, helping her out with deliveries! You k
 #them
 I was so worried about seeing you again, but it looks like you haven’t cut it. It’s so long and beautiful, I wish I had hair like that. Every girl dreams of long hair like you!
 
- -> WhatTheHell
+*[Mom told you?] -> WhatTheHell
 
 === WhatTheHell ===
 #you
@@ -35,7 +35,7 @@ Yes, hija. She talks so much about you. And I talk to her about your late cousin
 #them
 Speaking of parents, you’re still single right? No surprises?
 
- -> GoodMood
+*[Haha, no.] -> GoodMood
 
 === GoodMood ===
 #you
@@ -47,7 +47,7 @@ Speaking of parents, you’re still single right? No surprises?
 #you
 Of course, Tia. Thank you for always looking out for me.
 
- -> TheDon
+*[Where is Don Luis?] -> TheDon
 
 === TheDon ===
 #you
@@ -59,7 +59,7 @@ Ah, Don Luis. I don’t know exactly where he lives, but he usually hangs out wi
 #them
 Those guys are only good for the streets, you know. Don’t stay around them too long.
 
- -> LetsGo
+*[Right...] -> LetsGo
 
 === LetsGo ===
 #you
@@ -68,6 +68,6 @@ Well, uh , thank you, Tia. I’ll get going now, the bread is starting to get sq
 #them
 Alright see you later, Reyes!
 
--> END
+*[Bye!] -> END
 
 
