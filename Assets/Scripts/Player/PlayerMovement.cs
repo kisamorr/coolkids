@@ -7,24 +7,46 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public CharacterController controller;
+    public Transform cam;                  // A reference to the main camera in the scenes transform
+
     public PlayerInputActions playerControls;
     private InputAction move;
     private InputAction jump;
     private InputAction look;
     private Vector3 moveDirection;
 
-    private CharacterController controller;
     private PlayerLook looking;
 
     private Vector2 movement;
     private Vector3 playerVelocity;
     private bool isGrounded;
-    public float gravity = -20f;
     public float speed = 10f;
     public float runSpeed = 15f;
     public float jumpHeight = 6f;
 
+
+    //
+    public float turnSmoothTime = 0.1f;
+
+    float turnSmoothVelocity;
+
+    public Vector3 moveDir;
+    public Vector3 _movement;
+
+    [Header("Gravity")]
+    public float gravity = -20f;
+    public float constantGravity = 0.6f;
+    public float maxGravity = -15;
+
+    private float currentGravity;
+    private Vector3 gravityDirection = Vector3.down;
+    private Vector3 gravityMovement;
+
+
     public ContactPoint[] contacts;
+
+    public Animator animator;
 
     private void Awake()
     {
@@ -35,6 +57,16 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (Camera.main != null)
+        {
+            cam = Camera.main.transform;
+        }
+        else
+        {
+            Debug.LogWarning(
+                "Warning: no main camera found. Character needs a camera tagged \"MainCamera\", for camera-RelativeJoint2D controls.", gameObject);
+        }
+
         controller = GetComponent<CharacterController>();
     }
 
@@ -66,6 +98,23 @@ public class PlayerMovement : MonoBehaviour
         {
             playerVelocity.y = -2f;
         }
+
+        if (direction.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            movement = moveDir.normalized * speed * Time.deltaTime;
+            controller.Move(_movement);
+            animator.SetFloat("speed", controller.velocity.magnitude);// this is just for animation
+        }
+        else
+        {
+            animator.SetFloat("speed", controller.velocity.magnitude);
+        }
+
 
         if (jump.IsPressed())
         {
