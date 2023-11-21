@@ -20,7 +20,7 @@ public class StoryManager : MonoBehaviour
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
     //public BackgroundLibrary backgroundLibrary;
-
+    public StoryTrigger StoryTrigger;
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
@@ -50,7 +50,7 @@ public class StoryManager : MonoBehaviour
 
         if (ourStory.canContinue)
         {
-            //options[0] = "Continue";
+            //options[0] = "";
         }
         else
         {
@@ -61,8 +61,6 @@ public class StoryManager : MonoBehaviour
         }
 
         SetupOptions(options);
-
-        //ContinueStory();
         
     }
 
@@ -80,7 +78,7 @@ public class StoryManager : MonoBehaviour
         storyIsPlaying = false;
         storyPanel.SetActive(false);
         //storyText.text = "";
-        //StoryTrigger.instance.dialogueIsFinished = true
+        StoryTrigger.dialogueFinished = true;
     }
 
     void SetupOptions(string[] options)
@@ -106,7 +104,7 @@ public class StoryManager : MonoBehaviour
 
     public void OnOptionClicked(int option)
     {
-        Debug.LogError($"Similar ");
+        //Debug.LogError($"Similar ");
         rightText.text = "";
         leftText.text = "";
 
@@ -155,10 +153,20 @@ public class StoryManager : MonoBehaviour
             {
                 string[] parts = tag.Split(';');
                 string characterName = parts[1];
-
+                //Instaead of having #them we can just use this to assign text to the right.
+                rightNameTag.SetActive(true);
+                leftNameTag.SetActive(false);
+                rightText.text = text;
+                rightText.color = Color.blue;
                 rightNameTagText.text = characterName;
+                didSomething = true;
             }
 
+            if (tag.StartsWith("end"))
+            {
+                ExitStoryMode();
+                didSomething = true;
+            }
             /*if (tag.StartsWith("sound;"))
             {
                 // "sound;music_octo"
