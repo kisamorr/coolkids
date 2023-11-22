@@ -11,6 +11,7 @@ using System.Runtime.ExceptionServices;
 
 public class StoryManager : MonoBehaviour
 {
+    public InputActionReference continueAction;
     public static StoryManager Instance;
     public TextAsset inkJson;
     public TextMeshProUGUI rightText, leftText, leftNameTagText, rightNameTagText;
@@ -19,10 +20,11 @@ public class StoryManager : MonoBehaviour
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
     //public BackgroundLibrary backgroundLibrary;
-
+    public StoryTrigger StoryTrigger;
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
+    public InputAction Continue;
 
     void Awake()
     {
@@ -36,6 +38,9 @@ public class StoryManager : MonoBehaviour
         storyPanel.SetActive(false);
         ourStory = new Story(inkJson.text);
         AdvanceStory();
+
+        continueAction.action.performed += (a) => OnOptionClicked(0);
+
     }
 
     // Update is called once per frame
@@ -45,7 +50,7 @@ public class StoryManager : MonoBehaviour
 
         if (ourStory.canContinue)
         {
-            options[0] = "Continue";
+            //options[0] = "";
         }
         else
         {
@@ -56,6 +61,7 @@ public class StoryManager : MonoBehaviour
         }
 
         SetupOptions(options);
+        
     }
 
     public void EnterStoryMode(TextAsset inkJSON)
@@ -72,6 +78,7 @@ public class StoryManager : MonoBehaviour
         storyIsPlaying = false;
         storyPanel.SetActive(false);
         //storyText.text = "";
+        StoryTrigger.dialogueFinished = true;
     }
 
     void SetupOptions(string[] options)
@@ -97,7 +104,7 @@ public class StoryManager : MonoBehaviour
 
     public void OnOptionClicked(int option)
     {
-        //Debug.LogError(option + " not Work");
+        //Debug.LogError($"Similar ");
         rightText.text = "";
         leftText.text = "";
 
@@ -146,21 +153,20 @@ public class StoryManager : MonoBehaviour
             {
                 string[] parts = tag.Split(';');
                 string characterName = parts[1];
-
+                //Instaead of having #them we can just use this to assign text to the right.
+                rightNameTag.SetActive(true);
+                leftNameTag.SetActive(false);
+                rightText.text = text;
+                rightText.color = Color.blue;
                 rightNameTagText.text = characterName;
                 didSomething = true;
             }
 
-            if (tag.StartsWith("icon;"))
+            if (tag.StartsWith("end"))
             {
-                string[] parts = tag.Split(';');
-                string iconProfile = parts[1];
-
-                //TODO: have icon change (a la background changing)
-                //see InkExample background manager
+                ExitStoryMode();
                 didSomething = true;
             }
-
             /*if (tag.StartsWith("sound;"))
             {
                 // "sound;music_octo"

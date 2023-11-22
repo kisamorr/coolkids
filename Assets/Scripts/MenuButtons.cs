@@ -18,7 +18,7 @@ public class MenuButtons : MonoBehaviour
 
     public void restartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Grounds");
         GameManager.instance.InventorySystem.SetActive(false);
     }
 

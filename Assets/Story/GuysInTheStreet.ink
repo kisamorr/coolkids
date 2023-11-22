@@ -5,92 +5,111 @@
 #you
 Don Luis! It’s nice to see you again, my mom sent me to deliver you some supplies!
 
-#them
-Don Luis: Ah, Reyes! ¿Como estás? It’s been a while huh?
+#name;Don Luis
+Ah, Reyes! ¿Como estás? It’s been a while huh?
 
-#them
-Unknown 1: Aye, who’s this beauty, Luis? Daughter? Niece? Girlfriend? HAHAHA!
+#name;Unknown 1
+Aye, who’s this beauty, Luis? Daughter? Niece? Girlfriend? HAHAHA!
 
-#them
-Unknown 2: Oh, don’t kid like that Roberto! Obviously, this is Carmen’s daughter. As beautiful as ever…
+#name;Unknown 2
+Oh, don’t kid like that Roberto! Obviously, this is Carmen’s daughter. As beautiful as ever…
 
-*[Uhm...] -> Creepy
+-> Creepy
 
 === Creepy ===
-#them
-Don Luis: (whispering)  Please excuse them, Reyes. Roberto and Victor always act this way. It’s not personal.
+#you
+Uhm...
 
-#them
-Don Luis: Thank you very much, hija. Let your mom know I say thanks.
+#name;Don Luis
+(whispering)  Please excuse them, Reyes. Roberto and Victor always act this way. It’s not personal.
 
-#them
-Don Roberto: I am Roberto! Nice to meet you… Reyes. What a pretty name.
+#name;Don Luis
+Thank you very much, hija. Let your mom know I say thanks.
 
-#them
-Victor: These oldheads don’t know anything about how to talk to girls, huh! Oi, Reyes, you’ve grown up! It’s me Victor, I fixed your Mom’s pipes that one time years ago.
+#name;Don Roberto
+I am Roberto! Nice to meet you… Reyes. What a pretty name.
 
-*[Oh, hel-] -> WeirdAgain
+#name;Victor
+These oldheads don’t know anything about how to talk to girls, huh! Oi, Reyes, you’ve grown up! It’s me Victor, I fixed your Mom’s pipes that one time years ago.
+
+-> WeirdAgain
 
 === WeirdAgain ===
-#them
-DON ROBERTO: I wouldn’t mind fixing that Senora's pipes next time. Let her know for me, huh, Reyes!
+#you
+Oh, hello-
 
-#them
+#name;Don Roberto
+I wouldn’t mind fixing that Senora's pipes next time. Let her know for me, huh, Reyes!
+
+#name;2 weirdos
 Cackling~
 
-#them
-Don Luis: Don’t talk about Carmen in front of her child like that, hijo.
+#name;Don Luis
+Don’t talk about Carmen in front of her child like that, hijo.
 
-#them
-Don Luis: So, how’s it been going, Reyes? You have a boyfriend yet?
+#name;Don Luis
+So, how’s it been going, Reyes? You have a boyfriend yet?
 
-*[Oh, uh-] -> Uncomfy
+-> Uncomfy
 
 === Uncomfy ===
-#them
-DON ROBERTO: Stop pimping out your son like that, Luis! Maybe Reyes has someone already. Do ya?
+#you
+Oh, uh-
 
-#them
-VICTOR: Don Luis’ son is a looker, Reyes. You guys would have some beautiful children, don’t you think?
+#name;Don Roberto
+Stop pimping out your son like that, Luis! Maybe Reyes has someone already. Do ya?
 
-#them
-DON ROBERTO: Now, you’re pimping that boy out! Maybe Reyes likes older guys?
+#name;Victor
+Don Luis’ son is a looker, Reyes. You guys would have some beautiful children, don’t you think?
 
-#them
+#name;Don Roberto
+Now, you’re pimping that boy out! Maybe Reyes likes older guys?
+
+#name;All
 More Cackling~
 
-*[Well I-] -> DenyYourWeirdness
+-> DenyYourWeirdness
 
 === DenyYourWeirdness ===
-#them
-DON LUIS: My son IS coming by to visit next week, if you are interested…
+#you
+Well, I-
+
+#name;Don Luis
+ My son IS coming by to visit next week, if you are interested…
 
 #you
 Uhm, I’m not looking for anyone in particular right now, Don. Thank you for offering.
 
-#them
-DON LUIS: Oh, c’mon. At least meet him for a bit, see how you like him? Hm?
+#name;Don Luis
+ Oh, c’mon. At least meet him for a bit, see how you like him? Hm?
 
-*[Yea, no.] -> NoThanks
+ -> NoThanks
 
 === NoThanks ===
 #you
- I’ll see him around when he visits. This is a small town after all.
+Uhm, haha.
 
-#them
-DON ROBERTO: See? Reyes knows where the REAL men are at!
+#you
+ I’ll see him around when he visits. This is a small town after all!
 
-#them
-VICTOR: Don, you always throw yourself at these youngins!
+#name;Don Roberto
+See? Reyes knows where the REAL men are at!
 
-#them
+#name;Victor
+Don, you always throw yourself at these youngins!
+
+#name;All
 More annoying cackling~
 
-*[Oh god] -> Leave
+-> Leave
 
 === Leave ===
-#them
-DON LUIS: Well, gracias for the supplies, hija. Tell Carmen I say hi.
+#you
+scratches head~
 
-*[Bye!] -> END
+#name;Don Luis
+Well, gracias for the supplies, hija. Tell Carmen I say hi.
+
+#end
+-> END
 
