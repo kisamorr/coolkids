@@ -148,6 +148,17 @@ public class StoryManager : MonoBehaviour
                 string characterName = parts[1];
 
                 rightNameTagText.text = characterName;
+                didSomething = true;
+            }
+
+            if (tag.StartsWith("icon;"))
+            {
+                string[] parts = tag.Split(';');
+                string iconProfile = parts[1];
+
+                //TODO: have icon change (a la background changing)
+                //see InkExample background manager
+                didSomething = true;
             }
 
             /*if (tag.StartsWith("sound;"))
