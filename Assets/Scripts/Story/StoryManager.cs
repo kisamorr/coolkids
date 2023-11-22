@@ -160,6 +160,10 @@ public class StoryManager : MonoBehaviour
                 rightText.color = Color.blue;
                 rightNameTagText.text = characterName;
                 didSomething = true;
+
+                IconManager.instance.SetIcon(characterName);
+                Debug.Log("icon should have changed to " + characterName);
+                didSomething = true;
             }
 
             if (tag.StartsWith("end"))
@@ -167,6 +171,7 @@ public class StoryManager : MonoBehaviour
                 ExitStoryMode();
                 didSomething = true;
             }
+
             /*if (tag.StartsWith("sound;"))
             {
                 // "sound;music_octo"
