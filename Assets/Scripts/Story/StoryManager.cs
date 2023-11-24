@@ -14,6 +14,7 @@ public class StoryManager : MonoBehaviour
     public InputActionReference continueAction;
     public static StoryManager Instance;
     public TextAsset inkJson;
+    public TextAsset altInkJson;
     public TextMeshProUGUI rightText, leftText, leftNameTagText, rightNameTagText;
     public Image rightProfile, leftProfile;
     public GameObject storyPanel, rightNameTag, leftNameTag;
@@ -139,7 +140,6 @@ public class StoryManager : MonoBehaviour
                 didSomething = true;
             }
 
-
             if (tag.StartsWith("you"))
             {
                 leftNameTag.SetActive(true);
@@ -164,6 +164,21 @@ public class StoryManager : MonoBehaviour
                 IconManager.instance.SetIcon(characterName);
                 Debug.Log("icon should have changed to " + characterName);
                 didSomething = true;
+            }
+
+            if (tag.StartsWith("stress;"))
+            {
+                string[] parts = tag.Split(';');
+                string emotionNumber = parts[1];
+                int emotionValue;
+                int.TryParse(emotionNumber, out emotionValue);
+                GameManager.instance.currentEmotion = GameManager.instance.currentEmotion - emotionValue;
+                didSomething = true;
+
+                if (GameManager.instance.currentEmotion <= 0)
+                {
+                    ourStory = new Story(altInkJson.text);
+                }
             }
 
             if (tag.StartsWith("end"))
