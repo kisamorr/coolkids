@@ -820,7 +820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec73ba711356f0746992817fe399738d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  continueAction: {fileID: 0}
   inkJson: {fileID: 4900000, guid: f9b7fb90f1c667b418aad0305992d310, type: 3}
+  altInkJson: {fileID: 0}
   rightText: {fileID: 3157814478525160886}
   leftText: {fileID: 8542395538920702251}
   leftNameTagText: {fileID: 0}
@@ -830,11 +832,21 @@ MonoBehaviour:
   storyPanel: {fileID: 9119459205765302128}
   rightNameTag: {fileID: 0}
   leftNameTag: {fileID: 0}
+  StoryTrigger: {fileID: 0}
   optionUI:
   - {fileID: 7739792922432502561}
   - {fileID: 1891424612300547749}
   - {fileID: 1193366919409642765}
   - {fileID: 6109348220698810531}
+  Continue:
+    m_Name: Continue
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d84c18dd-1e8f-4b1d-aff9-978b41d131ce
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!1 &1044213914368961723
 GameObject:
   m_ObjectHideFlags: 0
