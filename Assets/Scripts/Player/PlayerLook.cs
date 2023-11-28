@@ -13,16 +13,19 @@ public class PlayerLook : MonoBehaviour
 
     public void ProcessLook(Vector2 input)
     {
-        float mouseX = input.x;
-        float mouseY = input.y;
+        if (cam.isActiveAndEnabled)
+        {
+            float mouseX = input.x;
+            float mouseY = input.y;
 
-        xRotation -= (mouseY * Time.deltaTime) * ySensitivity;
-        xRotation = Mathf.Clamp(xRotation, -15f, 15f);
+            xRotation -= (mouseY * Time.deltaTime) * ySensitivity;
+            xRotation = Mathf.Clamp(xRotation, -15f, 15f);
 
-        yRotation += (mouseX * Time.deltaTime) * xSensitivity;
+            yRotation += (mouseX * Time.deltaTime) * xSensitivity;
 
-        // apply this to camera transform
-        cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, transform.rotation.z);
+            // apply this to camera transform
+            cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+            transform.rotation = Quaternion.Euler(xRotation, yRotation, transform.rotation.z);
+        }
     }
 }
