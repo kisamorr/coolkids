@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
     public GameObject MessagingOpen;
     public GameObject NotesOpen;
 
+    public Image emotionBar;
+    public float maxEmotion = 100f;
+    public float currentEmotion;
+
     private void Awake()
     {
         if (instance == null)
@@ -36,6 +40,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentEmotion = maxEmotion;
+
         MessagingApp.onClick.AddListener(openMessagingApp);
         MessagingAppExit.onClick.AddListener(closeMessagingApp);
         NotesApp.onClick.AddListener(openNotesApp);
@@ -45,6 +51,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        emotionBar.fillAmount = currentEmotion/maxEmotion;
         // inventory can be opened and closed
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
