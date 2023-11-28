@@ -25,7 +25,6 @@ public class StoryManager : MonoBehaviour
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
-    public InputAction Continue;
 
     void Awake()
     {
