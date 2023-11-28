@@ -30,4 +30,5 @@ CASHIER: That’ll be $7.
 #you
 ...
 
+#end
 -> END
