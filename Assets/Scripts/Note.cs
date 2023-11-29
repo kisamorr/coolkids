@@ -20,6 +20,8 @@ public class Note : MonoBehaviour
     {
         GameManager.instance.noteSlots[GameManager.instance.notesObtained].text = note.noteText;
         GameManager.instance.notesObtained++;
+        GameManager.instance.PhoneNotifIcon.gameObject.SetActive(true);
+        GameManager.instance.NoteNotifIcon.gameObject.SetActive(true);
     }
 
     // PUT THIS IN OTHER SCRIPTS TO TRIGGER OBTAINING A NOTE (thanks kisa):

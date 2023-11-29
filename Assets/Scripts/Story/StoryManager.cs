@@ -70,6 +70,7 @@ public class StoryManager : MonoBehaviour
         ourStory = new Story(inkJSON.text);
         storyIsPlaying = true;
         storyPanel.SetActive(true);
+        GameManager.instance.Phone.SetActive(false);
         currentOption = 0;
         AdvanceStory();
     }
@@ -78,8 +79,22 @@ public class StoryManager : MonoBehaviour
     {
         storyIsPlaying = false;
         storyPanel.SetActive(false);
+        GameManager.instance.Phone.SetActive(true);
         //storyText.text = "";
         StoryTrigger.dialogueFinished = true;
+
+
+        // if the player receives a note from this interaction (basically all interactions except arguments)
+        // noteInvolved MUST BE CHECKED IN EDITOR TO DETERMINE THIS
+        /*if (StoryTrigger.noteInvolved == true)
+        {
+            StoryTrigger.collectible.GiveItem();
+            StoryTrigger.collectible.isObtained = false;
+            StoryTrigger.note.ObtainNote();
+            StoryTrigger.dialogueFinished = true;
+        }*/
+
+        //StoryTrigger.StoryNote();
     }
 
     void SetupOptions(string[] options)
