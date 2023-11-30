@@ -66,10 +66,22 @@ public class StoryTrigger : MonoBehaviour
     private void OnTriggerExit(Collider collider)
     {
         playerInRange = false;
-        StoryManager.Instance.ExitStoryMode();
+        //StoryManager.Instance.ExitStoryMode();
 
         // if the player receives a note from this interaction (basically all interactions except arguments)
         // noteInvolved MUST BE CHECKED IN EDITOR TO DETERMINE THIS
+        if (noteInvolved == true)
+        {
+            collectible.GiveItem();
+            collectible.isObtained = false;
+            note.ObtainNote();
+            dialogueFinished = true;
+        }
+    }
+
+    public void StoryNote()
+    {
+        print("story note");
         if (noteInvolved == true)
         {
             collectible.GiveItem();
