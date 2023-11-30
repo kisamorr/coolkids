@@ -31,8 +31,8 @@ public class PlayerMovement : MonoBehaviour
 
     float turnSmoothVelocity;
 
-    public Vector3 moveDir;
-    public Vector3 _movement;
+    //public Vector3 moveDir;
+    //public Vector3 _movement;
 
     [Header("Gravity")]
     public float gravity = -20f;
@@ -99,23 +99,6 @@ public class PlayerMovement : MonoBehaviour
             playerVelocity.y = -2f;
         }
 
-        if (direction.magnitude >= 0.1f)
-        {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            movement = moveDir.normalized * speed * Time.deltaTime;
-            controller.Move(_movement);
-            animator.SetFloat("speed", controller.velocity.magnitude);// this is just for animation
-        }
-        else
-        {
-            animator.SetFloat("speed", controller.velocity.magnitude);
-        }
-
-
         if (jump.IsPressed())
         {
             Jump();
@@ -132,6 +115,10 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.x = movement.x;
         moveDirection.z = movement.y;
 
+
+
+        // player needs to FACE the direction of the transformation belwo
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             controller.Move(transform.TransformDirection(moveDirection) * runSpeed * Time.deltaTime);
@@ -140,6 +127,17 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
+        }
+
+        if (moveDirection != Vector3.zero)
+        {
+            Vector3 dir;
+
+            dir = transform.TransformDirection(moveDirection);
+            dir.y = 0;
+
+            transform.rotation = Quaternion.LookRotation(dir);
+
         }
 
         playerVelocity.y += gravity * Time.deltaTime;

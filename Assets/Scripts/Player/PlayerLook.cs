@@ -26,6 +26,9 @@ public class PlayerLook : MonoBehaviour
 
     private Transform _t;
 
+    public Vector2 CurrentRotation { get { return _angle; } }
+
+
 
     public void ClampAngle(ref Vector3 angle)
     {
@@ -72,20 +75,28 @@ public class PlayerLook : MonoBehaviour
         //// apply this to camera transform
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
         transform.rotation = Quaternion.Euler(xRotation, yRotation, transform.rotation.z);
+
+        //Debug.Log($"camera rotation is {cam.transform.localRotation}");
     }
 
-    //void LateUpdate()
-    //{
-    //    if (target)
-    //    {
-    //        Quaternion angleRotation = Quaternion.Euler(_angle.y, _angle.x, 0);
-    //        Quaternion currentRotation = Quaternion.Lerp(_oldRotation, angleRotation, Time.deltaTime * rotationSmoothing);
+    void LateUpdate()
+    {
+        if (target)
+        {
+            Quaternion angleRotation = Quaternion.Euler(_angle.y, _angle.x, 0);
+            Quaternion currentRotation = Quaternion.Lerp(_oldRotation, angleRotation, Time.deltaTime * rotationSmoothing);
 
-    //        _oldRotation = currentRotation;
+            _oldRotation = currentRotation;
 
-    //        _t.position = target.position - currentRotation * Vector3.forward * distance;
-    //        _t.LookAt(target.position, Vector3.up);
-    //    }
-    //}
+           // _t.position = target.position - currentRotation * Vector3.forward * distance;
+           // _t.LookAt(target.position, Vector3.up);
+        }
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, new Vector3(1, 1, 1));
+
+    }
 
 }
