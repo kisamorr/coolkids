@@ -30,7 +30,9 @@ public class SpriteSwitcher : MonoBehaviour
     private Transform _billboard;       //  another transform variable, for the object where the bildboard is                             
     private Transform _t;               //  another transform variable, for the object where this script is
     private Vector3 direction;          //  the direction of the camera is relative to this object
-    private bool tOutcome;
+    //private bool tOutcome;
+
+    public Transform localPosition; // position of transform relation to the parent transform
 
     private void OnValidate()
     {
@@ -65,10 +67,10 @@ public class SpriteSwitcher : MonoBehaviour
         {
             spriteIndex = 0;
         }
-        
+
         target.sprite = sprites[spriteIndex];
 
-        //
+
 
         Vector3 forward = _t.forward;
         forward.y = 0;
@@ -78,17 +80,22 @@ public class SpriteSwitcher : MonoBehaviour
         angle = Vector3.Angle(direction, forward);      // we use it to know the angle, calculating the smallest angle between the 2 vectors, The result is never greater than 180 degrees
         signAngle = angle * sign;                       // this is to know the full angle from -180 to 180, it can be easily turn into 0 to 360 by just adding 180
 
-        direction = TheCamera.position - _t.position;   // another vector, calculates the relative position of one object (this) to the other (camera)]  
-        direction.y = 0;                                // 0 in the "Y" axis of the 3D vector "direction" to make it a 2D vector on X,Z]
-        _billboard.rotation = Quaternion.LookRotation(-direction, _t.up);   // use the inverse of the targetpoint vector and the upwards vector of THIS object, to create a quaternion to look at the rotation of this vectors, then order the billboard to follow this same rotation]
+        direction = TheCamera.position - _t.position;   // another vector, calculates the relative position of one object (this) to the other (camera)
+        direction.y = 0;                                // 0 in the "Y" axis of the 3D vector "direction" to make it a 2D vector on X,Z
+        _billboard.rotation = Quaternion.LookRotation(-direction, _t.up);   // use the inverse of the targetpoint vector and the upwards vector of THIS object, to create a quaternion to look at the rotation of this vectors, then order the billboard to follow this same rotation
         
+
+
+
+
+
         if (useMirror)
         {
             Mirror();
         }
         else
         {
-            _sprite.flipX = false;  //if you are using animation dont worry, the animatior overrides spriteRenderer coming from a code like this
+            _sprite.flipX = false;  // the animatior overrides spriteRenderer
         }
 
 

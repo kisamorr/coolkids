@@ -5680,7 +5680,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6608825365530727543}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &2524352239871905401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6119,9 +6119,10 @@ MonoBehaviour:
   target: {fileID: 3739394455486069952}
   TheCamera: {fileID: 3881229068009327700}
   billboard: {fileID: 2937594064255121467}
-  useAnimator: 0
+  useAnimator: 1
   use4Directions: 1
   useMirror: 0
+  localPosition: {fileID: 3200197642499570583}
 --- !u!114 &5724620926570885219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6141,11 +6142,12 @@ MonoBehaviour:
   - {fileID: -1951084194, guid: 27a6687780925904ba43758b2b75a220, type: 3}
   - {fileID: 625252250, guid: 27a6687780925904ba43758b2b75a220, type: 3}
   target: {fileID: 3739394455486069952}
-  TheCamera: {fileID: 0}
-  billboard: {fileID: 0}
+  TheCamera: {fileID: 3881229068009327700}
+  billboard: {fileID: 2937594064255121467}
   useAnimator: 0
   use4Directions: 1
   useMirror: 0
+  localPosition: {fileID: 0}
 --- !u!1001 &5727595463484972907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6559,6 +6561,7 @@ GameObject:
   - component: {fileID: 3881229068009327700}
   - component: {fileID: 2525969071335063}
   - component: {fileID: 2364147508564682837}
+  - component: {fileID: 6608825365530727544}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6566,6 +6569,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6608825365530727544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6608825365530727543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f264f30b1fe87145b6906a48fe48be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7282224253853400142
 PrefabInstance:
   m_ObjectHideFlags: 0
