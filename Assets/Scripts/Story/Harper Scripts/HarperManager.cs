@@ -4,5 +4,13 @@ using UnityEngine;
 
 public class HarperManager : MonoBehaviour
 {
-    public bool harper1, harper2, harper3 = false;
+    public GameObject harper1, harper2, harper3, harperFollow;
+
+    private void Update()
+    {
+        if (harper1.activeInHierarchy || harper2.activeInHierarchy || harper3.activeInHierarchy)
+        {
+            harperFollow.SetActive(false);
+        }
+    }
 }

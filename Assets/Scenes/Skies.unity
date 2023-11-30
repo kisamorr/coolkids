@@ -2463,6 +2463,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7081377384899484947, guid: 650ce3ee8e1da7048a6e151f983cea24, type: 3}
   m_PrefabInstance: {fileID: 5048881512051375980}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &196117827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196117826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838e0cf27116fc047975d05fad1f676e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Harper: {fileID: 196117826}
+  HarperCollider: {fileID: 7017535365864929496}
+  harperFollow: {fileID: 196816154}
 --- !u!1 &196816154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,13 +2491,14 @@ GameObject:
   - component: {fileID: 196816157}
   - component: {fileID: 196816156}
   - component: {fileID: 196816159}
+  - component: {fileID: 196816160}
   m_Layer: 0
   m_Name: harperPlaceholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &196816155
 Transform:
   m_ObjectHideFlags: 0
@@ -2583,6 +2599,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   harper: {fileID: 196816154}
   reyes: {fileID: 1080632444}
+--- !u!114 &196816160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196816154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e887d40c40870541b788b099603e7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  harper1: {fileID: 344327571}
+  harper2: {fileID: 196117826}
+  harper3: {fileID: 1262183158}
+  harperFollow: {fileID: 196816154}
 --- !u!1 &200652069
 GameObject:
   m_ObjectHideFlags: 0
@@ -3847,6 +3879,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50f2996815e39f14ab58662a797eb71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &344327573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344327571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838e0cf27116fc047975d05fad1f676e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Harper: {fileID: 344327571}
+  HarperCollider: {fileID: 1814465428}
+  harperFollow: {fileID: 196816154}
 --- !u!1001 &359868757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21837,6 +21884,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3819803440042484149, guid: 650ce3ee8e1da7048a6e151f983cea24, type: 3}
   m_PrefabInstance: {fileID: 5048881512051375980}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1262183159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262183158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838e0cf27116fc047975d05fad1f676e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Harper: {fileID: 1262183158}
+  HarperCollider: {fileID: 7017535365864929495}
+  harperFollow: {fileID: 196816154}
 --- !u!1 &1292846683
 GameObject:
   m_ObjectHideFlags: 0
@@ -50213,6 +50275,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1814465428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 670453454517056284, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+  m_PrefabInstance: {fileID: 7017535365864929494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1851723069
 GameObject:
   m_ObjectHideFlags: 0
@@ -53925,7 +53992,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8007791501582754371, guid: 650ce3ee8e1da7048a6e151f983cea24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 344327573}
+    - targetCorrespondingSourceObject: {fileID: 7081377384899484947, guid: 650ce3ee8e1da7048a6e151f983cea24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 196117827}
+    - targetCorrespondingSourceObject: {fileID: 3819803440042484149, guid: 650ce3ee8e1da7048a6e151f983cea24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1262183159}
   m_SourcePrefab: {fileID: 100100000, guid: 650ce3ee8e1da7048a6e151f983cea24, type: 3}
 --- !u!1001 &7017535365864929494
 PrefabInstance:
