@@ -40,7 +40,7 @@ public class StoryManager : MonoBehaviour
         AdvanceStory();
 
         continueAction.action.performed += (a) => OnOptionClicked(0);
-        Debug.Log("Continue was pressed");
+
     }
 
     // Update is called once per frame
@@ -122,6 +122,9 @@ public class StoryManager : MonoBehaviour
         //Debug.LogError($"Similar ");
         rightText.text = "";
         leftText.text = "";
+        midText.text = "";
+
+        Debug.Log($"{continueAction} was pressed");
 
         if (ourStory.canContinue)
         {

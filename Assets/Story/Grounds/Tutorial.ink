@@ -4,13 +4,11 @@
 #you
 My hair. Its length goes so far down…
 
--> Criticise
-
-=== Criticise ===
-#you
+#them
 I used to have a flat chest. I used to have an interest in make-up…
 
 #narrator
+#stress;10
 Eying himself makes his stress go up slightly.
 
 #you
