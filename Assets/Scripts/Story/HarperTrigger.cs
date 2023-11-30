@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class HarperTrigger : MonoBehaviour
 {
-    public Collider[] colliders;
-    public GameObject[] harper;
+    public GameObject Harper;
 
-    private void OnTriggerEnter(string[] colliders)
+    private void OnTriggerEnter(Collider collider)
     {
-        foreach (string collider in colliders)
+        if (collider.gameObject.tag == "Player")
         {
-            if (collider.gameObject.tag == "Player")
-            {
-                harper[0].SetActive(true);
-            }
+            Harper.SetActive(true);
         }
-        
     }
 
     //TODO: make harper run over to desired position when hitting collider

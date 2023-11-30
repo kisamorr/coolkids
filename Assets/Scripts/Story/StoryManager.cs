@@ -15,7 +15,7 @@ public class StoryManager : MonoBehaviour
     public static StoryManager Instance;
     public TextAsset inkJson;
     public TextAsset altInkJson;
-    public TextMeshProUGUI rightText, leftText, leftNameTagText, rightNameTagText;
+    public TextMeshProUGUI rightText, leftText, midText, leftNameTagText, rightNameTagText;
     public Image rightProfile, leftProfile;
     public GameObject storyPanel, rightNameTag, leftNameTag;
     //public Animator leftAnimator, rightAnimator;
@@ -40,7 +40,7 @@ public class StoryManager : MonoBehaviour
         AdvanceStory();
 
         continueAction.action.performed += (a) => OnOptionClicked(0);
-
+        Debug.Log("Continue was pressed");
     }
 
     // Update is called once per frame
@@ -183,6 +183,15 @@ public class StoryManager : MonoBehaviour
             if (tag.StartsWith("end"))
             {
                 ExitStoryMode();
+                didSomething = true;
+            }
+
+            if (tag.StartsWith("narrator"))
+            {
+                rightNameTag.SetActive(false);
+                leftNameTag.SetActive(false);
+                midText.text = text;
+                midText.color = Color.black;
                 didSomething = true;
             }
 
