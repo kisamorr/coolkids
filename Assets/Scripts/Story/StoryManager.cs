@@ -147,10 +147,10 @@ public class StoryManager : MonoBehaviour
 
             if (tag.StartsWith("them"))
             {
-                rightNameTag.SetActive(true);
-                leftNameTag.SetActive(false);
-                rightText.text = text;
-                rightText.color = Color.blue;
+                leftNameTag.SetActive(true);
+                rightNameTag.SetActive(false);
+                leftText.text = text;
+                leftText.color = Color.red;
                 didSomething = true;
             }
 
