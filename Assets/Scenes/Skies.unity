@@ -14736,9 +14736,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381828363797855216, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 381828363797855216, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+      propertyPath: runSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1922583535692814241, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -44.8
+      value: -64.88
       objectReference: {fileID: 0}
     - target: {fileID: 1922583535692814241, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
       propertyPath: m_LocalPosition.y
@@ -53935,6 +53943,10 @@ PrefabInstance:
       propertyPath: Harper
       value: 
       objectReference: {fileID: 344327571}
+    - target: {fileID: 3105173582186081326, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -40.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4212822194211263829, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
       propertyPath: m_Name
       value: Colliders
@@ -53983,11 +53995,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6239758972053246804, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+    - {fileID: 181958534841020336, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6499809556335900595, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7017535365864929497}
+    - targetCorrespondingSourceObject: {fileID: 3899577856203952937, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7017535365864929501}
   m_SourcePrefab: {fileID: 100100000, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+--- !u!1 &7017535365864929495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3899577856203952937, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+  m_PrefabInstance: {fileID: 7017535365864929494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7017535365864929496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6499809556335900595, guid: 6f9fcefe91d336e4da2043a914a14369, type: 3}
+  m_PrefabInstance: {fileID: 7017535365864929494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7017535365864929497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017535365864929496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9880f06718f9e2741880e3367fa55828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Harper: {fileID: 196117826}
+  harperTrigger2: {fileID: 7017535365864929501}
+--- !u!114 &7017535365864929501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017535365864929495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d19ea116850a4046803cc759cb71e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActivated: 0
+  Harper: {fileID: 1262183158}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
