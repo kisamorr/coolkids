@@ -25,10 +25,12 @@ public class GameManager : MonoBehaviour
     public GameObject MessagingOpen;
     public GameObject NotesOpen;
     public GameObject Phone, PhoneNotifIcon, MessageNotifIcon, NoteNotifIcon;
+    public GameObject dialogueSystem;
 
     public Image emotionBar;
     public float maxEmotion = 100f;
     public float currentEmotion;
+    public bool emotionUpdating;
 
     private void Awake()
     {
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentEmotion = maxEmotion;
+        emotionUpdating = false;
 
         MessagingApp.onClick.AddListener(openMessagingApp);
         MessagingAppExit.onClick.AddListener(closeMessagingApp);
@@ -76,6 +79,16 @@ public class GameManager : MonoBehaviour
 
                 Phone.SetActive(false);
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!dialogueSystem.activeInHierarchy && currentEmotion < maxEmotion)
+        {
+            float emotionIncrease = 0.05f;
+            print("running coroutine");
+            currentEmotion = currentEmotion + emotionIncrease;
         }
     }
 

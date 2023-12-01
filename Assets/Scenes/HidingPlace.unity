@@ -6751,6 +6751,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1075535968}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: dialogueSystem
+      value: 
+      objectReference: {fileID: 1671054726}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: InventorySystem
       value: 
       objectReference: {fileID: 1075535985}
@@ -11184,6 +11188,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9746ca821b57435439cacd9988c9d269, type: 3}
+--- !u!1 &1671054726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9119459205765302128, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1075535967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1738635663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7293264368577155434, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}

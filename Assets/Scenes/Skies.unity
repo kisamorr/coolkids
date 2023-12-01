@@ -5373,6 +5373,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec73ba711356f0746992817fe399738d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &421627642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9119459205765302128, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 421627639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &423231144
 Mesh:
   m_ObjectHideFlags: 0
@@ -38803,6 +38808,10 @@ PrefabInstance:
       propertyPath: PhoneNotifIcon
       value: 
       objectReference: {fileID: 1492134258}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: dialogueSystem
+      value: 
+      objectReference: {fileID: 421627642}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: InventorySystem
       value: 

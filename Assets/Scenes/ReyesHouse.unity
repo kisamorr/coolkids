@@ -530,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: emotionBar
       value: 
-      objectReference: {fileID: 560154800}
+      objectReference: {fileID: 1559936770}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: MessagingApp
       value: 
@@ -551,6 +551,10 @@ PrefabInstance:
       propertyPath: PhoneNotifIcon
       value: 
       objectReference: {fileID: 241541250}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: dialogueSystem
+      value: 
+      objectReference: {fileID: 477881399}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: InventorySystem
       value: 
@@ -3823,6 +3827,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &477881399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9119459205765302128, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1156515097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &491963916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,17 +4266,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &560154800 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2345360688597409728, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
-  m_PrefabInstance: {fileID: 1156515097}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &561396175
 Mesh:
   m_ObjectHideFlags: 0
@@ -11480,6 +11478,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6197061818127843778, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
   m_PrefabInstance: {fileID: 1156515097}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1559936770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1148298036363894761, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1156515097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1560451320 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 845532399207014811, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
