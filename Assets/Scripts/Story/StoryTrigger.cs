@@ -49,7 +49,6 @@ public class StoryTrigger : MonoBehaviour
             }
         }
 
-        //else
         if (StoryManager.storyDone == true && playerInRange)
         {
             visualCue.SetActive(false);
