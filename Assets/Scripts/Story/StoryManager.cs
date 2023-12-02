@@ -66,6 +66,7 @@ public class StoryManager : MonoBehaviour
 
     public void EnterStoryMode(TextAsset inkJSON)
     {
+        Time.timeScale = 0;
         ourStory = new Story(inkJSON.text);
         storyPanel.SetActive(true);
         GameManager.instance.Phone.SetActive(false);
@@ -75,6 +76,7 @@ public class StoryManager : MonoBehaviour
 
     public void ExitStoryMode()
     {
+        Time.timeScale = 1;
         storyDone = true;
         storyPanel.SetActive(false);
         GameManager.instance.Phone.SetActive(true);
