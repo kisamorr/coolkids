@@ -55,6 +55,11 @@ public class StoryTrigger : MonoBehaviour
             StoryNote();
             StoryManager.storyDone = false;
         }
+
+        if (playerInRange == false)
+        {
+            visualCue.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider collider)
