@@ -52,7 +52,6 @@ public class GameManager : MonoBehaviour
         NotesAppExit.onClick.AddListener(closeNotesApp);
     }
 
-    // Update is called once per frame
     void Update()
     {
         emotionBar.fillAmount = currentEmotion/maxEmotion;

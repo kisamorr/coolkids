@@ -78,20 +78,6 @@ public class StoryManager : MonoBehaviour
         storyDone = true;
         storyPanel.SetActive(false);
         GameManager.instance.Phone.SetActive(true);
-        //storyText.text = "";
-
-
-        // if the player receives a note from this interaction (basically all interactions except arguments)
-        // noteInvolved MUST BE CHECKED IN EDITOR TO DETERMINE THIS
-        /*if (StoryTrigger.noteInvolved == true)
-        {
-            StoryTrigger.collectible.GiveItem();
-            StoryTrigger.collectible.isObtained = false;
-            StoryTrigger.note.ObtainNote();
-            StoryTrigger.dialogueFinished = true;
-        }*/
-
-        //StoryTrigger.StoryNote();
     }
 
     void SetupOptions(string[] options)
@@ -117,12 +103,9 @@ public class StoryManager : MonoBehaviour
 
     public void OnOptionClicked(int option)
     {
-        //Debug.LogError($"Similar ");
         rightText.text = "";
         leftText.text = "";
         midText.text = "";
-
-        //Debug.Log($"{continueAction} was pressed");
 
         if (ourStory.canContinue)
         {
@@ -222,16 +205,6 @@ public class StoryManager : MonoBehaviour
                 SoundManager.instance.PlaySound(soundName);
                 Debug.Log("you should be hearing something here");
                 Debug.Log(soundName);
-                didSomething = true;
-            }
-
-            if (tag.StartsWith("setting;"))
-            {
-                string[] parts = tag.Split(';');
-                string bgName = parts[1];
-
-                BackgroundManager.instance.SetBackground(bgName);
-                Debug.Log("background should have changed to" + bgName);
                 didSomething = true;
             }
 

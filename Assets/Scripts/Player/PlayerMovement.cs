@@ -24,15 +24,12 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 15f;
     public float jumpHeight = 6f;
 
-    public ContactPoint[] contacts;
-
     private void Awake()
     {
         playerControls = new PlayerInputActions();
         looking = GetComponent<PlayerLook>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -57,8 +54,7 @@ public class PlayerMovement : MonoBehaviour
         jump.Disable();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         isGrounded = controller.isGrounded;
 
@@ -103,21 +99,5 @@ public class PlayerMovement : MonoBehaviour
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
         }
-    }
-
-    private void OnColliderEnter(Collider collision)
-    {
-        if (collision.gameObject.tag == "Ladder")
-        {
-            print("collided with ladder");
-        }
-        /*if (collision.gameObject.tag == "Ladder" && Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space))
-        {
-            print("collided with ladder");
-            ContactPoint contact = collision.contacts[0];
-            Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-            Vector3 pos = contact.point;
-            gameObject.transform.rotation *= rot;
-        }*/
     }
 }
