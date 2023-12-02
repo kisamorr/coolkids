@@ -14,6 +14,7 @@ public class PlayerLook : MonoBehaviour
     public float xSensitivity = 15f;
     public float ySensitivity = 15f;
 
+    // here to end is new (other than ProcessLook())
     public bool InvertY;
 
     public float rotationSmoothing = 10;

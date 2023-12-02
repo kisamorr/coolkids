@@ -7,15 +7,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
-    public Transform cam;                  // A reference to the main camera in the scenes transform
+    public CharacterController controller; //new
+    public Transform cam;                  // new; A reference to the main camera in the scenes transform
 
     public PlayerInputActions playerControls;
     private InputAction move;
     private InputAction jump;
     private InputAction look;
     private Vector3 moveDirection;
-
     private PlayerLook looking;
 
     private Vector2 movement;
@@ -27,24 +26,24 @@ public class PlayerMovement : MonoBehaviour
 
 
     //
-    public float turnSmoothTime = 0.1f;
+    public float turnSmoothTime = 0.1f; //new
 
-    float turnSmoothVelocity;
+    float turnSmoothVelocity; //new
 
     //public Vector3 moveDir;
     //public Vector3 _movement;
 
-    [Header("Gravity")]
+    [Header("Gravity")] //new
     public float gravity = -20f;
-    public float constantGravity = 0.6f;
-    public float maxGravity = -15;
+    public float constantGravity = 0.6f; //new
+    public float maxGravity = -15; //new
 
-    private float currentGravity;
-    private Vector3 gravityDirection = Vector3.down;
-    private Vector3 gravityMovement;
+    private float currentGravity; //new
+    private Vector3 gravityDirection = Vector3.down; //new
+    private Vector3 gravityMovement; //new
 
 
-    public ContactPoint[] contacts;
+    public ContactPoint[] contacts; //can be removed
 
     public Animator animator;
 
@@ -52,20 +51,21 @@ public class PlayerMovement : MonoBehaviour
     {
         playerControls = new PlayerInputActions();
         looking = GetComponent<PlayerLook>();
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (Camera.main != null)
+        if (Camera.main != null) //new
         {
             cam = Camera.main.transform;
         }
-        else
+        else //new
         {
             Debug.LogWarning(
                 "Warning: no main camera found. Character needs a camera tagged \"MainCamera\", for camera-RelativeJoint2D controls.", gameObject);
-        }
+        } // new ends here
 
         controller = GetComponent<CharacterController>();
     }
@@ -94,6 +94,11 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = controller.isGrounded;
 
+        if (isGrounded )
+        {
+            animator.SetBool("Idle", true);
+        }
+
         if (isGrounded && playerVelocity.y < 0)
         {
             playerVelocity.y = -2f;
@@ -103,11 +108,35 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
+
+        if (move.IsPressed())
+        {
+            if (Input.GetKey(KeyCode.W) && isGrounded)
+            {
+                animator.SetTrigger("back");
+            }
+            if(Input.GetKey(KeyCode.S) && isGrounded)
+            {
+                animator.SetTrigger("front");
+            }
+            if(Input.GetKey(KeyCode.D) && isGrounded)
+            {
+                animator.SetTrigger("right");
+            }
+            if(Input.GetKey(KeyCode.A)  && isGrounded)
+            {
+                animator.SetTrigger("left");
+
+            }
+        }
+
     }
+
     private void LateUpdate()
     {
         looking.ProcessLook(look.ReadValue<Vector2>());
     }
+
     void FixedUpdate()
     {
         movement = move.ReadValue<Vector2>();
@@ -117,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        // player needs to FACE the direction of the transformation belwo
+        // new; player needs to FACE the direction of the transformation belwo
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -129,7 +158,7 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
         }
 
-        if (moveDirection != Vector3.zero)
+        if (moveDirection != Vector3.zero) //new
         {
             Vector3 dir;
 
@@ -138,7 +167,7 @@ public class PlayerMovement : MonoBehaviour
 
             transform.rotation = Quaternion.LookRotation(dir);
 
-        }
+        } //end of new
 
         playerVelocity.y += gravity * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
