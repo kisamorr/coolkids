@@ -35,7 +35,7 @@ public class ArgumentTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange)
+        if (StoryManager.storyDone == false && playerInRange)
         {
             visualCue.SetActive(true);
 
@@ -45,7 +45,14 @@ public class ArgumentTrigger : MonoBehaviour
             }
         }
 
-        else
+        if (StoryManager.storyDone == true && playerInRange)
+        {
+            dialogueFinished = true;
+            visualCue.SetActive(false);
+            StoryManager.storyDone = false;
+        }
+
+        if (playerInRange == false)
         {
             visualCue.SetActive(false);
         }
@@ -62,6 +69,5 @@ public class ArgumentTrigger : MonoBehaviour
     private void OnTriggerExit(Collider collider)
     {
         playerInRange = false;
-        StoryManager.Instance.ExitStoryMode();
     }
 }

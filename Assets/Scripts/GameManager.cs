@@ -52,7 +52,6 @@ public class GameManager : MonoBehaviour
         NotesAppExit.onClick.AddListener(closeNotesApp);
     }
 
-    // Update is called once per frame
     void Update()
     {
         emotionBar.fillAmount = currentEmotion/maxEmotion;
@@ -87,7 +86,6 @@ public class GameManager : MonoBehaviour
         if (!dialogueSystem.activeInHierarchy && currentEmotion < maxEmotion)
         {
             float emotionIncrease = 0.05f;
-            print("running coroutine");
             currentEmotion = currentEmotion + emotionIncrease;
         }
     }
