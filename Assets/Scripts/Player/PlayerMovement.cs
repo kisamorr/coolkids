@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10f;
     public float runSpeed = 15f;
     public float jumpHeight = 6f;
+    public Animator animator;
 
     private void Awake()
     {
@@ -57,6 +58,11 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         isGrounded = controller.isGrounded;
+        
+        if (isGrounded )
+        {
+            animator.SetBool("Idle", true );
+        }
 
         if (isGrounded && playerVelocity.y < 0)
         {
@@ -66,6 +72,28 @@ public class PlayerMovement : MonoBehaviour
         if (jump.IsPressed())
         {
             Jump();
+        }
+
+        if (move.IsPressed() && isGrounded)
+        {
+            animator.SetBool("Idle", false);
+
+            if (Input.GetKey(KeyCode.W))
+            {
+                animator.SetTrigger("back");
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                animator.SetTrigger("front");
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                animator.SetTrigger("right");
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                animator.SetTrigger("left");
+            }
         }
     }
     private void LateUpdate()

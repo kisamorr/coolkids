@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3961113367193122462}
   - component: {fileID: 1188111217810360658}
   - component: {fileID: 7641404201003365121}
+  - component: {fileID: 302733452724156116}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -98,6 +99,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freezeXZaxis: 1
+--- !u!95 &302733452724156116
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2431348777869432729}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6439307572222783033
 GameObject:
   m_ObjectHideFlags: 0
