@@ -87,7 +87,6 @@ public class GameManager : MonoBehaviour
         if (!dialogueSystem.activeInHierarchy && currentEmotion < maxEmotion)
         {
             float emotionIncrease = 0.05f;
-            print("running coroutine");
             currentEmotion = currentEmotion + emotionIncrease;
         }
     }

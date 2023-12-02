@@ -20,8 +20,8 @@ public class StoryManager : MonoBehaviour
     public GameObject storyPanel, rightNameTag, leftNameTag;
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
+    public bool storyDone = false;
     //public BackgroundLibrary backgroundLibrary;
-    public StoryTrigger StoryTrigger;
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
@@ -67,7 +67,6 @@ public class StoryManager : MonoBehaviour
     public void EnterStoryMode(TextAsset inkJSON)
     {
         ourStory = new Story(inkJSON.text);
-        storyIsPlaying = true;
         storyPanel.SetActive(true);
         GameManager.instance.Phone.SetActive(false);
         currentOption = 0;
@@ -76,11 +75,10 @@ public class StoryManager : MonoBehaviour
 
     public void ExitStoryMode()
     {
-        storyIsPlaying = false;
+        storyDone = true;
         storyPanel.SetActive(false);
         GameManager.instance.Phone.SetActive(true);
         //storyText.text = "";
-        StoryTrigger.dialogueFinished = true;
 
 
         // if the player receives a note from this interaction (basically all interactions except arguments)
@@ -124,7 +122,7 @@ public class StoryManager : MonoBehaviour
         leftText.text = "";
         midText.text = "";
 
-        Debug.Log($"{continueAction} was pressed");
+        //Debug.Log($"{continueAction} was pressed");
 
         if (ourStory.canContinue)
         {

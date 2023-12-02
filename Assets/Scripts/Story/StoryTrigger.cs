@@ -49,9 +49,12 @@ public class StoryTrigger : MonoBehaviour
             }
         }
 
-        else
+        //else
+        if (StoryManager.storyDone == true && playerInRange)
         {
             visualCue.SetActive(false);
+            StoryNote();
+            StoryManager.storyDone = false;
         }
     }
 
@@ -70,13 +73,13 @@ public class StoryTrigger : MonoBehaviour
 
         // if the player receives a note from this interaction (basically all interactions except arguments)
         // noteInvolved MUST BE CHECKED IN EDITOR TO DETERMINE THIS
-        if (noteInvolved == true)
+        /*if (noteInvolved == true)
         {
             collectible.GiveItem();
             collectible.isObtained = false;
             note.ObtainNote();
             dialogueFinished = true;
-        }
+        }*/
     }
 
     public void StoryNote()
