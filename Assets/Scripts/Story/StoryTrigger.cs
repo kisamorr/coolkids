@@ -6,7 +6,7 @@ using Ink.Runtime;
 
 public class StoryTrigger : MonoBehaviour
 {
-    public StoryTrigger instance;
+    public StoryTrigger instance; //watermelon
     public GameObject visualCue;
     private bool playerInRange;
     public bool dialogueFinished = false;
