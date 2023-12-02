@@ -2,7 +2,8 @@
 
 === Monologue ===
 #you
-My hair. Its length goes so far down…
+My hair. Its length goes so far down… <i>Space to continue...
+
 
 #them
 I used to have a flat chest. I used to have an interest in make-up…
