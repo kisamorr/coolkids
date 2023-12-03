@@ -3,13 +3,14 @@
 
 === main ===
 #you
+#stress;100
 Mom! I’m back!
-
-#name;Carmen
- ...
  
 #name;Carmen
  Oh, you're back. Already?
+
+#you
+Yeah, I'm not feeling that great right now.
 
 #name;Carmen
  Did you talk to them or just deliver the food like a delivery boy?
@@ -22,14 +23,31 @@ Mom! I’m back!
 I talked to them, Mom. I’m not rude.
 
 #name;Carmen
- Huff! To me you are.
+ Mhmm.
+ 
+ #name;Carmen
+ What's wrong with you? Why do you have that face?
+ 
+ #you 
+ I just said I'm not feeling great right now.
+ 
+ #name;Carmen
+ From what? You haven't done anything all day, hija. All you did was bring the supplies.
+ 
+ #you
+ Ugh.
+ 
+ #name;Carmen
+ Don't get an attitude with me.
+ 
+#name;Carmen
+I swear, all you know how to do is complain.
 
 *[...] -> secondChoice
 
-
 === secondChoice ===
 #name;Carmen
-You never help me around the house, never ask me how I’m doing, you don’t even have a job and you complain to me about not having money. Now I have to worry about how you dress like when you were 5.
+You never help me around the house, never ask me how I’m doing, you don’t even have a job and you complain to me about not having money.And now, I have to worry about how you dress like when you were 5.
 
 *[That's not fair.] -> thirdChoice
 
@@ -59,10 +77,10 @@ What?!
 I was talking to Tita Andrea and Tita Angela earlier. They told me that you told them about how I felt about clothes to embarrass me.
 
 #you
-I told you about that so that you’d keep it to yourself, but instead you tell the whole neighborhood and I have kids in the street calling me names!
+I told you about that so that you’d keep it to yourself, but instead you tell the whole neighborhood.
 
 #name;Carmen
-I did not tell them, they asked me about you! And you mean the teens? Why are you letting them hurt your feelings?
+I did not tell them, they asked me about you!
 
 #name;Carmen
 You’re always making me out to be bad when I’m just talking about MY child. You don’t appreciate me at all! And those Tita’s are good friends of mine, it's not like they’re strangers.
@@ -116,6 +134,6 @@ Those clothes were enough for me. I need you to have standards for what you look
 And she’s right, you’ll look terrible with short hair! You never listen to me when I tell you the truth!
 
 #name;Carmen
-And your feelings get hurt too easily, mija, it's ridiculous! We’re only trying to  take care of you!
+And your feelings get hurt too easily, mija, it's ridiculous! We’re only trying to take care of you!
 #end
 *[Storm out] -> END

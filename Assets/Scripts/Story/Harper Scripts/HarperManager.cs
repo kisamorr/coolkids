@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HarperManager : MonoBehaviour
 {
-    public GameObject harper1, harper2, harper3, harperFollow;
+    public GameObject harper1, harper2, harper3, harper4, harper5, harperFollow;
 
     private void Update()
     {

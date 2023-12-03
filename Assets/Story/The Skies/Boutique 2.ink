@@ -17,7 +17,11 @@ So, show me the good stuff!
 #name;Harper
 I live up to the expectations.
 
+#narrator
+Reyes examines the jacket for a few seconds, looking for the price tag. They open the collar a bit more and he finds a small white tag hanging from the size tag.
+
 #you
+#stress;20
 Uhm, this is $40 Harper.
 
 #name;Harper
@@ -31,6 +35,9 @@ Harper, I’m sorry I can’t afford to shop here either.
 
 #name;Harper
 What? These are the cheapest prices in town, Reyes. You won’t be able to find this again after today. (gesturing towards the jacket)
+
+#narrator
+Reyes takes one last good look at the jacket before hesitantly putting it back on the rack. Harper sees the longing in Reyes’ eyes, feeling guilty for even bringing them there in the first place.
 
 #name;Harper
 Oh, Reyes…

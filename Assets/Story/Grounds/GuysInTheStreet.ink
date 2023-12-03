@@ -9,9 +9,11 @@ Don Luis! It’s nice to see you again, my mom sent me to deliver you some suppl
 Ah, Reyes! ¿Como estás? It’s been a while huh?
 
 #name;Unknown 1
+#stress;10
 Aye, who’s this beauty, Luis? Daughter? Niece? Girlfriend? HAHAHA!
 
-#name;Unknown 2
+#name;Unknown 
+#stress;5
 Oh, don’t kid like that Roberto! Obviously, this is Carmen’s daughter. As beautiful as ever…
 
 -> Creepy
@@ -41,13 +43,15 @@ Oh, hello-
 #name;Don Roberto
 I wouldn’t mind fixing that Senora's pipes next time. Let her know for me, huh, Reyes!
 
-#name;2 weirdos
+#name;The 2 Weirdos
+#stress;10
 Cackling~
 
 #name;Don Luis
 Don’t talk about Carmen in front of her child like that, hijo.
 
 #name;Don Luis
+#stress;10
 So, how’s it been going, Reyes? You have a boyfriend yet?
 
 -> Uncomfy
@@ -66,6 +70,7 @@ Don Luis’ son is a looker, Reyes. You guys would have some beautiful children,
 Now, you’re pimping that boy out! Maybe Reyes likes older guys?
 
 #name;All
+#stress;10
 More Cackling~
 
 -> DenyYourWeirdness
@@ -81,6 +86,7 @@ Well, I-
 Uhm, I’m not looking for anyone in particular right now, Don. Thank you for offering.
 
 #name;Don Luis
+#stress;100
  Oh, c’mon. At least meet him for a bit, see how you like him? Hm?
 
  -> NoThanks

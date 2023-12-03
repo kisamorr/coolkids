@@ -3,7 +3,7 @@
 
 === main ===
 #name;Tita Andrea
-Reyes, honey! You looked past us!
+Reyes! How are you??
  
  #name;Tita Angela
  Reyes!
@@ -12,6 +12,7 @@ Reyes, honey! You looked past us!
  Oh, Tita Andrea! Tita Angela! It’s been so long, how are you guys doing?
 
 #name;Tita Andrea
+#stress;5
 Honey, I’ve been dying to talk to you! Your mom says you’re staying for a while. Why what happened with school?
  -> Questions
  
@@ -20,9 +21,11 @@ Honey, I’ve been dying to talk to you! Your mom says you’re staying for a wh
  Well-
  
  #name;Tita Angela
+ #stress;5
  Did you have a hard time over there? Are you quitting?
 
 #name;Tita Andrea
+#stress;5
 Maybe you found a boyfriend?
  
  -> MoreQuestions
@@ -52,6 +55,7 @@ I was just planning to make some agua de tamarindo, tell her we say thanks, hone
  I should g-
  
  #name;Tita Andrea
+ #stress;10
  Oh but before you go, I heard from Carmen that you didn’t like the clothes I sent you. I saw the pretty dress and I thought you would love it, what happened honey?
 
 #name;Tita Angela
@@ -63,9 +67,11 @@ Oh right, you know we don’t get paid a lot honey, why didn’t you like it?
 Uhm...
 
 #name;Tita Andrea
+#stress;5
 Carmen also says you’ve been feeling off lately? Is that why your style is getting so bad? Do you need help with anything?
 
 #name;Tita Angela
+#stress;5
 Andrea, you know how tough it is to be a girl these days! I feel for you honey, you can stop by anytime and we can do some confidence building! Make-over?
 
 -> GetOut

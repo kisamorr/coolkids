@@ -11,6 +11,7 @@ Uhm, Harper…
 What’s up?
 
 #you
+#stress;5
 I don’t think I can afford to shop here right now…
 
 #name;Harper

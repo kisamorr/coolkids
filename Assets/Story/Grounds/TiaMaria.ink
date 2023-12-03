@@ -24,6 +24,7 @@ Sorry, I wish I could stay, but I have to make a couple more deliveries.
 Oh ok hija! You’re so kind to your mom, helping her out with deliveries! You know, she told me you wanted to cut off all your hair!
 
 #name;Tia Maria
+#stress;10
 I was so worried about seeing you again, but it looks like you haven’t cut it. It’s so long and beautiful, I wish I had hair like that. Every girl dreams of long hair like you!
 
  -> WhatTheHell

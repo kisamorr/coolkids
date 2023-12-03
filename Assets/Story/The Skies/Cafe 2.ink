@@ -23,6 +23,7 @@ Reyes, it’s never going to be easy being who we are. The whole world hates peo
 Thank you…
 
 #name;Harper
+#stress:10
 Besides, you don’t have to stay in that rundown town forever. Get your bag up and go. It’s freeing, trust me.
 
 #you
@@ -35,12 +36,14 @@ Why DID you quit school?
 I just… felt out of place there…
 
 #name;Harper
+#stress;10
 Why? The trans community is  much bigger in the city where your school is than here.
 
 #you
 I just felt homesick, I guess.
 
 #name;Harper
+#stress;10
 You know, your mom is going to be real sorry seeing you leave. I think it’s best for the both of you, honestly. Distancing yourself from someone you love can be the solution to getting along.
 
 #you
