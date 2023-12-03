@@ -10664,7 +10664,7 @@ PrefabInstance:
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: altInkJson
       value: 
-      objectReference: {fileID: 4900000, guid: 11f1be9e146f1ea4d9faf891453305cb, type: 3}
+      objectReference: {fileID: 4900000, guid: 29ac22cf2b6918a4a8e188f7af4c7bc4, type: 3}
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: leftNameTag
       value: 

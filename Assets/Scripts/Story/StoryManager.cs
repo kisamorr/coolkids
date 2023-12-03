@@ -25,6 +25,7 @@ public class StoryManager : MonoBehaviour
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
+    //public GameObject lights;
 
     void Awake()
     {
@@ -185,6 +186,7 @@ public class StoryManager : MonoBehaviour
             {
                 ExitStoryMode();
                 didSomething = true;
+                //lights.SetActive(true);
             }
 
             if (tag.StartsWith("narrator"))
