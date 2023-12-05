@@ -212,26 +212,9 @@ public class StoryManager : MonoBehaviour
                 Debug.Log("you should be hearing something here");
                 Debug.Log(soundName);
                 didSomething = true;
-            }
-
-            if (tag.StartsWith("anim;"))
-            {
-                string[] parts = tag.Split(';');
-                string animName = parts[1];
-
-                if (currentAnimator != null)
-                {
-                    currentAnimator.SetTrigger(animName);
-                    Debug.Log(animName);
-                }
-                else
-                {
-                    Debug.LogError("Anim tag found but without a character to use");
-                }
-
-                didSomething = true;
             }*/
 
+            
             if (!didSomething)
             {
                 Debug.LogError("$Couldn't interpret tag");
