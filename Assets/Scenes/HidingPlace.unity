@@ -359,7 +359,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 685cd6c4d68fe044593d15dca9653f92, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3341,6 +3341,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &82417863 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1246079400202980134, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1075535967}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075535969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &142389803 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7149882763077287938, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
@@ -3867,7 +3878,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: fa1aa2a29ad8d834a85be3bca3912890, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7228,7 +7239,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 50ff9811d84ffeb42b11f0d57157a346, type: 2}
+  - {fileID: 2100000, guid: ae935448ea35765458d9e508bb41b5e5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10715,6 +10726,18 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 617410644305058182, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: phone
+      value: 
+      objectReference: {fileID: 1075535969}
+    - target: {fileID: 617410644305058182, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 1075535985}
+    - target: {fileID: 617410644305058182, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: openPhone
+      value: 
+      objectReference: {fileID: 82417863}
     - target: {fileID: 1017998566327592679, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -11262,15 +11285,15 @@ PrefabInstance:
       objectReference: {fileID: -375273413, guid: 27a6687780925904ba43758b2b75a220, type: 3}
     - target: {fileID: 1922583535692814241, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 78.05
+      value: 81.73
       objectReference: {fileID: 0}
     - target: {fileID: 1922583535692814241, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.93
+      value: 6.94
       objectReference: {fileID: 0}
     - target: {fileID: 1922583535692814241, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.04
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 1922583535692814241, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
       propertyPath: m_LocalRotation.w

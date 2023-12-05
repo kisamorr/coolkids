@@ -14,14 +14,13 @@ public class StoryManager : MonoBehaviour
     public InputActionReference continueAction;
     public static StoryManager Instance;
     public TextAsset inkJson;
-    public TextAsset altInkJson;
+    //public TextAsset altInkJson;
     public TextMeshProUGUI rightText, leftText, midText, leftNameTagText, rightNameTagText;
     public Image rightProfile, leftProfile;
     public GameObject storyPanel, rightNameTag, leftNameTag;
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
     public bool storyDone = false;
-    //public BackgroundLibrary backgroundLibrary;
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
@@ -176,10 +175,10 @@ public class StoryManager : MonoBehaviour
                 GameManager.instance.currentEmotion = GameManager.instance.currentEmotion - emotionValue;
                 didSomething = true;
 
-                if (GameManager.instance.currentEmotion <= 0)
+                /*if (GameManager.instance.currentEmotion <= 0)
                 {
                     ourStory = new Story(altInkJson.text);
-                }
+                }*/
             }
 
             if (tag.StartsWith("end"))
