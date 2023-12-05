@@ -13,6 +13,7 @@ public class StoryManager : MonoBehaviour
 {
     public InputActionReference continueAction;
     public static StoryManager Instance;
+    public LightTrigger lightTrigger;
     public TextAsset inkJson;
     //public TextAsset altInkJson;
     public TextMeshProUGUI rightText, leftText, midText, leftNameTagText, rightNameTagText;
@@ -44,7 +45,7 @@ public class StoryManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         string[] options = new string[4];
 
@@ -80,6 +81,7 @@ public class StoryManager : MonoBehaviour
         storyDone = true;
         storyPanel.SetActive(false);
         GameManager.instance.Phone.SetActive(true);
+        lightTrigger.lightIndicator.SetActive(false);
     }
 
     void SetupOptions(string[] options)
@@ -185,6 +187,7 @@ public class StoryManager : MonoBehaviour
             {
                 ExitStoryMode();
                 didSomething = true;
+                storyDone = true;
                 //lights.SetActive(true);
             }
 
