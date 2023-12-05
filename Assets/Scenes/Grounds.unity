@@ -8130,6 +8130,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 4.320031
       objectReference: {fileID: 0}
+    - target: {fileID: 8610036438029342571, guid: 91fa31a809f655d4d8da9956a0e9ca7e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8701618182274064832, guid: 91fa31a809f655d4d8da9956a0e9ca7e, type: 3}
       propertyPath: m_Mesh
       value: 
