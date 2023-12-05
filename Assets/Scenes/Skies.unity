@@ -5449,7 +5449,7 @@ PrefabInstance:
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: inkJson
       value: 
-      objectReference: {fileID: 4900000, guid: 2eca01fb1a75f904f9ac37085f4dfc65, type: 3}
+      objectReference: {fileID: 4900000, guid: 3aa3d0625a58d2449a34b51dd4bee316, type: 3}
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: midText
       value: 
@@ -49026,9 +49026,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1231308823ddf4941be34103becfdc06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Harper: {fileID: 1657062922}
-  OutsideCafeCollider: {fileID: 0}
-  InsideMallCollider: {fileID: 0}
 --- !u!1 &1697879206
 GameObject:
   m_ObjectHideFlags: 0
@@ -55427,6 +55424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Colliders
       objectReference: {fileID: 0}
+    - target: {fileID: 950416411943838205, guid: a94c8a5f5289f7144bb64fc8321b19bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1160320295027612548, guid: a94c8a5f5289f7144bb64fc8321b19bf, type: 3}
       propertyPath: Harper
       value: 
@@ -55447,6 +55448,10 @@ PrefabInstance:
       propertyPath: Harper
       value: 
       objectReference: {fileID: 8973664940936122197}
+    - target: {fileID: 6733751939207839520, guid: a94c8a5f5289f7144bb64fc8321b19bf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6987812368471485823, guid: a94c8a5f5289f7144bb64fc8321b19bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.007113

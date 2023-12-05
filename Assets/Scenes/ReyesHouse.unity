@@ -6835,6 +6835,8 @@ MonoBehaviour:
   note: {fileID: 2031930973}
   collectible: {fileID: 2031930974}
   noteInvolved: 0
+  taskInvolved: 0
+  taskCheck: {fileID: 0}
 --- !u!114 &864972160 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2370609416530370844, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
@@ -9937,7 +9939,7 @@ PrefabInstance:
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: inkJson
       value: 
-      objectReference: {fileID: 4900000, guid: 36e44a8b68febc54d8b7cc5d68056603, type: 3}
+      objectReference: {fileID: 4900000, guid: 3aa3d0625a58d2449a34b51dd4bee316, type: 3}
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: midText
       value: 
