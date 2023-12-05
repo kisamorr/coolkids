@@ -81,7 +81,6 @@ public class StoryManager : MonoBehaviour
         storyDone = true;
         storyPanel.SetActive(false);
         GameManager.instance.Phone.SetActive(true);
-        lightTrigger.lightIndicator.SetActive(false);
     }
 
     void SetupOptions(string[] options)
