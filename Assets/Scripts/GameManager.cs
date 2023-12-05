@@ -24,6 +24,13 @@ public class GameManager : MonoBehaviour
     public Button NotesAppExit;
     public GameObject MessagingOpen;
     public GameObject NotesOpen;
+    public GameObject Phone, PhoneNotifIcon, MessageNotifIcon, NoteNotifIcon;
+    public GameObject dialogueSystem;
+
+    public Image emotionBar;
+    public float maxEmotion = 100f;
+    public float currentEmotion;
+    public bool emotionUpdating;
 
     private void Awake()
     {
@@ -36,15 +43,18 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentEmotion = maxEmotion;
+        emotionUpdating = false;
+
         MessagingApp.onClick.AddListener(openMessagingApp);
         MessagingAppExit.onClick.AddListener(closeMessagingApp);
         NotesApp.onClick.AddListener(openNotesApp);
         NotesAppExit.onClick.AddListener(closeNotesApp);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        emotionBar.fillAmount = currentEmotion/maxEmotion;
         // inventory can be opened and closed
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
@@ -52,6 +62,7 @@ public class GameManager : MonoBehaviour
             {
                 print("active");
                 InventorySystem.SetActive(false);
+                Phone.SetActive(true);
                 Time.timeScale = 1;
             }
 
@@ -59,13 +70,34 @@ public class GameManager : MonoBehaviour
             {
                 InventorySystem.SetActive(true);
                 Time.timeScale = 0;
+
+                if (PhoneNotifIcon.activeInHierarchy)
+                {
+                    PhoneNotifIcon.SetActive(false);
+                }
+
+                Phone.SetActive(false);
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!dialogueSystem.activeInHierarchy && currentEmotion < maxEmotion)
+        {
+            float emotionIncrease = 0.05f;
+            currentEmotion = currentEmotion + emotionIncrease;
         }
     }
 
     public void openMessagingApp()
     {
         MessagingOpen.SetActive(true);
+
+        if (MessageNotifIcon.activeInHierarchy)
+        {
+            MessageNotifIcon.SetActive(false);
+        }
     }
 
     public void closeMessagingApp()
@@ -76,6 +108,11 @@ public class GameManager : MonoBehaviour
     public void openNotesApp()
     {
         NotesOpen.SetActive(true);
+
+        if (NoteNotifIcon.activeInHierarchy)
+        {
+            NoteNotifIcon.SetActive(false);
+        }
     }
 
     public void closeNotesApp()

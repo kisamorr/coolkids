@@ -11,18 +11,21 @@ using System.Runtime.ExceptionServices;
 
 public class StoryManager : MonoBehaviour
 {
+    public InputActionReference continueAction;
     public static StoryManager Instance;
     public TextAsset inkJson;
-    public TextMeshProUGUI rightText, leftText, leftNameTagText, rightNameTagText;
+    public TextAsset altInkJson;
+    public TextMeshProUGUI rightText, leftText, midText, leftNameTagText, rightNameTagText;
     public Image rightProfile, leftProfile;
     public GameObject storyPanel, rightNameTag, leftNameTag;
     //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
+    public bool storyDone = false;
     //public BackgroundLibrary backgroundLibrary;
-
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
+    //public GameObject lights;
 
     void Awake()
     {
@@ -36,6 +39,9 @@ public class StoryManager : MonoBehaviour
         storyPanel.SetActive(false);
         ourStory = new Story(inkJson.text);
         AdvanceStory();
+
+        continueAction.action.performed += (a) => OnOptionClicked(0);
+
     }
 
     // Update is called once per frame
@@ -45,7 +51,7 @@ public class StoryManager : MonoBehaviour
 
         if (ourStory.canContinue)
         {
-            options[0] = "Continue";
+            //options[0] = "";
         }
         else
         {
@@ -56,22 +62,25 @@ public class StoryManager : MonoBehaviour
         }
 
         SetupOptions(options);
+        
     }
 
     public void EnterStoryMode(TextAsset inkJSON)
     {
+        Time.timeScale = 0;
         ourStory = new Story(inkJSON.text);
-        storyIsPlaying = true;
         storyPanel.SetActive(true);
+        GameManager.instance.Phone.SetActive(false);
         currentOption = 0;
         AdvanceStory();
     }
 
     public void ExitStoryMode()
     {
-        storyIsPlaying = false;
+        Time.timeScale = 1;
+        storyDone = true;
         storyPanel.SetActive(false);
-        //storyText.text = "";
+        GameManager.instance.Phone.SetActive(true);
     }
 
     void SetupOptions(string[] options)
@@ -97,9 +106,9 @@ public class StoryManager : MonoBehaviour
 
     public void OnOptionClicked(int option)
     {
-        //Debug.LogError(option + " not Work");
         rightText.text = "";
         leftText.text = "";
+        midText.text = "";
 
         if (ourStory.canContinue)
         {
@@ -125,13 +134,12 @@ public class StoryManager : MonoBehaviour
 
             if (tag.StartsWith("them"))
             {
-                rightNameTag.SetActive(true);
-                leftNameTag.SetActive(false);
-                rightText.text = text;
-                rightText.color = Color.blue;
+                leftNameTag.SetActive(true);
+                rightNameTag.SetActive(false);
+                leftText.text = text;
+                leftText.color = Color.red;
                 didSomething = true;
             }
-
 
             if (tag.StartsWith("you"))
             {
@@ -146,8 +154,48 @@ public class StoryManager : MonoBehaviour
             {
                 string[] parts = tag.Split(';');
                 string characterName = parts[1];
-
+                //Instaead of having #them we can just use this to assign text to the right.
+                rightNameTag.SetActive(true);
+                leftNameTag.SetActive(false);
+                rightText.text = text;
+                rightText.color = Color.blue;
                 rightNameTagText.text = characterName;
+                didSomething = true;
+
+                IconManager.instance.SetIcon(characterName);
+                Debug.Log("icon should have changed to " + characterName);
+                didSomething = true;
+            }
+
+            if (tag.StartsWith("stress;"))
+            {
+                string[] parts = tag.Split(';');
+                string emotionNumber = parts[1];
+                int emotionValue;
+                int.TryParse(emotionNumber, out emotionValue);
+                GameManager.instance.currentEmotion = GameManager.instance.currentEmotion - emotionValue;
+                didSomething = true;
+
+                if (GameManager.instance.currentEmotion <= 0)
+                {
+                    ourStory = new Story(altInkJson.text);
+                }
+            }
+
+            if (tag.StartsWith("end"))
+            {
+                ExitStoryMode();
+                didSomething = true;
+                //lights.SetActive(true);
+            }
+
+            if (tag.StartsWith("narrator"))
+            {
+                rightNameTag.SetActive(false);
+                leftNameTag.SetActive(false);
+                midText.text = text;
+                midText.color = Color.black;
+                didSomething = true;
             }
 
             /*if (tag.StartsWith("sound;"))
@@ -161,16 +209,6 @@ public class StoryManager : MonoBehaviour
                 SoundManager.instance.PlaySound(soundName);
                 Debug.Log("you should be hearing something here");
                 Debug.Log(soundName);
-                didSomething = true;
-            }
-
-            if (tag.StartsWith("setting;"))
-            {
-                string[] parts = tag.Split(';');
-                string bgName = parts[1];
-
-                BackgroundManager.instance.SetBackground(bgName);
-                Debug.Log("background should have changed to" + bgName);
                 didSomething = true;
             }
 

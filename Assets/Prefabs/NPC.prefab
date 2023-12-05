@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instance: {fileID: 2264996597959462824}
   visualCue: {fileID: 1287308377634401829}
+  dialogueFinished: 0
   inkJson: {fileID: 4900000, guid: f9b7fb90f1c667b418aad0305992d310, type: 3}
   interact:
     m_Name: Interact
@@ -164,6 +165,9 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   StoryManager: {fileID: 0}
+  note: {fileID: 0}
+  collectible: {fileID: 0}
+  noteInvolved: 0
 --- !u!1001 &4436076581272814470
 PrefabInstance:
   m_ObjectHideFlags: 0

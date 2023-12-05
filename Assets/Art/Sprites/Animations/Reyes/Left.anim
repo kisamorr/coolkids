@@ -6,11 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
   m_Name: Left
-========
-  m_Name: walk side animation Left_Clip
->>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -25,51 +21,30 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
       value: {fileID: 625252250, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 0.16666667
+      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
     - time: 0.33333334
+      value: {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 0.5
       value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
     - time: 0.6666667
+      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 0.8333333
       value: {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
     - time: 1
       value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
-    - time: 1.3333334
-      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
-    - time: 1.6666666
-      value: {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
-    - time: 2
-      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
-========
-      value: {fileID: -2687271377939393006, guid: a742db4417103254990b2af4c30ba69a, type: 3}
-    - time: 0.1
-      value: {fileID: 6348337137709550022, guid: a742db4417103254990b2af4c30ba69a, type: 3}
-    - time: 0.2
-      value: {fileID: -6499151370807620940, guid: a742db4417103254990b2af4c30ba69a, type: 3}
-    - time: 0.3
-      value: {fileID: 4555141837616024439, guid: a742db4417103254990b2af4c30ba69a, type: 3}
-    - time: 0.4
-      value: {fileID: 8652008401460520077, guid: a742db4417103254990b2af4c30ba69a, type: 3}
-    - time: 0.5
-      value: {fileID: -7619304635602089306, guid: a742db4417103254990b2af4c30ba69a, type: 3}
-    - time: 0.6
-      value: {fileID: -7619304635602089306, guid: a742db4417103254990b2af4c30ba69a, type: 3}
->>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
   m_SampleRate: 60
-========
-  m_SampleRate: 100
->>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
     genericBindings:
     - serializedVersion: 2
       path: 0
@@ -88,20 +63,12 @@ AnimationClip:
     - {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
     - {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
     - {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
-========
-    genericBindings: []
-    pptrCurveMapping: []
->>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
-    m_StopTime: 2.0166667
-========
-    m_StopTime: 0.61
->>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
+    m_StopTime: 1.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -112,7 +79,7 @@ AnimationClip:
     m_LoopBlendPositionY: 0
     m_LoopBlendPositionXZ: 0
     m_KeepOriginalOrientation: 0
-    m_KeepOriginalPositionY: 0
+    m_KeepOriginalPositionY: 1
     m_KeepOriginalPositionXZ: 0
     m_HeightFromFeet: 0
     m_Mirror: 0

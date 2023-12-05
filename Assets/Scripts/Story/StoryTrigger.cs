@@ -6,7 +6,7 @@ using Ink.Runtime;
 
 public class StoryTrigger : MonoBehaviour
 {
-    public StoryTrigger instance;
+    public StoryTrigger instance; //watermelon
     public GameObject visualCue;
     private bool playerInRange;
     public bool dialogueFinished = false;
@@ -26,13 +26,13 @@ public class StoryTrigger : MonoBehaviour
         playerControls = new PlayerInputActions();
     }
 
-    private void OnEnable() //Must be used for the new input system to work properly
+    private void OnEnable()
     {
         interact = playerControls.Player.Interact;
         interact.Enable();
     }
 
-    private void OnDisable() //Must be used for the new input system to work properly
+    private void OnDisable()
     {
         interact.Disable();
     }
@@ -49,7 +49,14 @@ public class StoryTrigger : MonoBehaviour
             }
         }
 
-        else
+        if (StoryManager.storyDone == true && playerInRange)
+        {
+            visualCue.SetActive(false);
+            StoryNote();
+            StoryManager.storyDone = false;
+        }
+
+        if (playerInRange == false)
         {
             visualCue.SetActive(false);
         }
@@ -66,16 +73,17 @@ public class StoryTrigger : MonoBehaviour
     private void OnTriggerExit(Collider collider)
     {
         playerInRange = false;
-        StoryManager.Instance.ExitStoryMode();
+    }
 
-        // if the player receives a note from this interaction (basically all interactions except arguments)
-        // noteInvolved MUST BE CHECKED IN EDITOR TO DETERMINE THIS
+    public void StoryNote()
+    {
+        collectible.GiveItem();
+        collectible.isObtained = false;
+        dialogueFinished = true;
+
         if (noteInvolved == true)
         {
-            collectible.GiveItem();
-            collectible.isObtained = false;
             note.ObtainNote();
-            dialogueFinished = true;
         }
     }
 }
