@@ -2646,7 +2646,6 @@ GameObject:
   - component: {fileID: 196816157}
   - component: {fileID: 196816156}
   - component: {fileID: 196816159}
-  - component: {fileID: 196816160}
   m_Layer: 0
   m_Name: harperPlaceholder
   m_TagString: Untagged
@@ -2754,24 +2753,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   harper: {fileID: 196816154}
   reyes: {fileID: 1080632444}
---- !u!114 &196816160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196816154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e887d40c40870541b788b099603e7f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  harper1: {fileID: 344327571}
-  harper2: {fileID: 196117826}
-  harper3: {fileID: 1262183158}
-  harper4: {fileID: 842928741}
-  harper5: {fileID: 1657062922}
-  harperFollow: {fileID: 196816154}
 --- !u!1 &200652069
 GameObject:
   m_ObjectHideFlags: 0
@@ -39693,8 +39674,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2607284393782891851, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1455000794}
   m_SourcePrefab: {fileID: 100100000, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+--- !u!1 &1455000793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2607284393782891851, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+  m_PrefabInstance: {fileID: 1455000792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1455000794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455000793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e887d40c40870541b788b099603e7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  harper1: {fileID: 344327571}
+  harper2: {fileID: 842928741}
+  harper3: {fileID: 1262183158}
+  harper4: {fileID: 196117826}
+  harper5: {fileID: 1657062922}
+  harper6: {fileID: 8973664940936122197}
+  harperFollow: {fileID: 196816154}
 --- !u!43 &1470783107
 Mesh:
   m_ObjectHideFlags: 0
