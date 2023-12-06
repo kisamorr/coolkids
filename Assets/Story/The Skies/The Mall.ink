@@ -2,10 +2,10 @@
 
 === main ===
 #name;Harper
-The mall is right here! I love this mall, it has all the latest styles and the stores are super fancy.
+The mall is right here! I <i>loooooove</i> this mall. It has all the latest styles, and the stores are <i>super</i> fancy.
 
 #you
-Uhm, Harper…
+Um, Harper…
 
 #name;Harper
 What’s up?

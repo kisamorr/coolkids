@@ -5,10 +5,10 @@
 The crowds are nice here, aren’t they? Doesn’t it feel freeing to be with people like you?
 
 #you
-Harper, I-...
+Harper, I...
 
 #you
-(taking a deep breath) I don’t think I can stay for a drink actually. I forgot I have to head home to help my mom out with some chores.
+I don’t think I can stay for a drink, actually. I forgot I have to head home to help my mom out with some chores.
 
 #name;Harper
 Really? I thought you wanted to get away from her for a bit?
@@ -17,7 +17,7 @@ Really? I thought you wanted to get away from her for a bit?
 Yeah, I think it’s been long enough.
 
 #name;Harper
-Ugh, Reyes. You know you don't have to listen to her? You’re an adult, you don’t need to do everything she says.
+Ugh, Reyes. You know you don't have to listen to her. You’re an adult, you don’t need to do everything she says.
 
 #name;Harper
 I mean, it’s not like she appreciates you anyways. The way she talks about you proves that.
@@ -25,7 +25,7 @@ I mean, it’s not like she appreciates you anyways. The way she talks about you
 #you
 I wouldn’t say that… she’s just complicated.
 
-#anem;Harper
+#name;Harper
  Right.
 
 #narrator
