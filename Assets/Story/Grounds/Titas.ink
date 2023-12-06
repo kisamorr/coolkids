@@ -3,7 +3,7 @@
 
 === main ===
 #name;Tita Andrea
-Reyes! How are you??
+Reyes! How are you?
  
  #name;Tita Angela
  Reyes!
@@ -13,7 +13,7 @@ Reyes! How are you??
 
 #name;Tita Andrea
 #stress;5
-Honey, I’ve been dying to talk to you! Your mom says you’re staying for a while. Why what happened with school?
+Honey, I’ve been dying to talk to you! Your mom says you’re staying for a while. Why? What happened with school?
  -> Questions
  
  === Questions ===
@@ -38,7 +38,7 @@ Maybe you found a boyfriend?
  Oh right, Don Luis was talking about his son visiting town, Reyes! Don’t tell me you found someone already?
 
 #you
-Uhm. I’m not looking for anyone right now Tita, but thank you for worrying about me you guys!
+Um. I’m not looking for anyone right now, Tita, but thank you for worrying about me, you guys!
 
 #you 
 I’m doing all good, just staying with my mom to help her out. Speaking of which, she told me to give you guys some bread and agua de tamarindo!
@@ -47,7 +47,7 @@ I’m doing all good, just staying with my mom to help her out. Speaking of whic
 Oh my gosh, she didn’t have to!
 
 #name;Tita Angela
-I was just planning to make some agua de tamarindo, tell her we say thanks, honey.
+I was just planning to make some agua de tamarindo! Tell her we say thanks, honey.
  -> Intercepted
  
  === Intercepted ===
@@ -56,15 +56,15 @@ I was just planning to make some agua de tamarindo, tell her we say thanks, hone
  
  #name;Tita Andrea
  #stress;10
- Oh but before you go, I heard from Carmen that you didn’t like the clothes I sent you. I saw the pretty dress and I thought you would love it, what happened honey?
+ Oh but before you go, I heard from Carmen that you didn’t like the clothes I sent you. I saw the pretty dress and I thought you would love it! What happened, honey?
 
 #name;Tita Angela
-Oh right, you know we don’t get paid a lot honey, why didn’t you like it?
+Oh, right. You know we don’t get paid a lot, honey, why didn’t you like it?
  -> Badgering
 
 === Badgering ===
 #you 
-Uhm...
+Um...
 
 #name;Tita Andrea
 #stress;5
@@ -72,7 +72,7 @@ Carmen also says you’ve been feeling off lately? Is that why your style is get
 
 #name;Tita Angela
 #stress;5
-Andrea, you know how tough it is to be a girl these days! I feel for you honey, you can stop by anytime and we can do some confidence building! Make-over?
+Andrea, you know how tough it is to be a girl these days! I feel for you, honey. You can stop by any time, and we can do some confidence building! Make-over?
 
 -> GetOut
 
@@ -81,13 +81,13 @@ Andrea, you know how tough it is to be a girl these days! I feel for you honey, 
 I would love to stay and chat more with you guys, but I have to find Don Luis to give him his delivery. Do you guys have any idea where he could be?
 
 #name;Tita Andrea
-Ugh that Don Luis, he’s at the square with his buddies of course.
+Ugh, that Don Luis. He’s at the square with his buddies of course.
 
 #name;Tita Angela
-Don’t stay there for too long and get home before it gets dark, honey.
+Don’t stay there for too long, and get home before it gets dark, honey.
 
 #you 
-Thank you Titas. I’ll be back to visit you guys soon.
+Thank you, Titas. I’ll be back to visit you guys soon.
 
 #end
 -> END

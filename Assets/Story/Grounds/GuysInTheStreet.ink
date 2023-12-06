@@ -6,13 +6,13 @@
 Don Luis! It’s nice to see you again, my mom sent me to deliver you some supplies!
 
 #name;Don Luis
-Ah, Reyes! ¿Como estás? It’s been a while huh?
+Ah, Reyes! ¿Como estás? It’s been a while, huh?
 
-#name;Unknown 1
+#name;Don Roberto
 #stress;10
 Aye, who’s this beauty, Luis? Daughter? Niece? Girlfriend? HAHAHA!
 
-#name;Unknown 
+#name;Victor
 #stress;5
 Oh, don’t kid like that Roberto! Obviously, this is Carmen’s daughter. As beautiful as ever…
 
@@ -43,9 +43,9 @@ Oh, hello-
 #name;Don Roberto
 I wouldn’t mind fixing that Senora's pipes next time. Let her know for me, huh, Reyes!
 
-#name;The 2 Weirdos
+#narrator
 #stress;10
-Cackling~
+Don Roberto and Victor cackle.
 
 #name;Don Luis
 Don’t talk about Carmen in front of her child like that, hijo.
@@ -69,9 +69,9 @@ Don Luis’ son is a looker, Reyes. You guys would have some beautiful children,
 #name;Don Roberto
 Now, you’re pimping that boy out! Maybe Reyes likes older guys?
 
-#name;All
+#narrator
 #stress;10
-More Cackling~
+The three men laugh again.
 
 -> DenyYourWeirdness
 
@@ -80,23 +80,23 @@ More Cackling~
 Well, I-
 
 #name;Don Luis
- My son IS coming by to visit next week, if you are interested…
+ My son IS coming by to visit next week, if you're interested…
 
 #you
-Uhm, I’m not looking for anyone in particular right now, Don. Thank you for offering.
+Um, I’m not looking for anyone in particular right now, Don. Thank you for offering.
 
 #name;Don Luis
-#stress;100
- Oh, c’mon. At least meet him for a bit, see how you like him? Hm?
+#stress;50
+Oh, c’mon. At least meet him for a bit, see how you like him? Hm?
 
  -> NoThanks
 
 === NoThanks ===
 #you
-Uhm, haha.
+Um, haha.
 
 #you
- I’ll see him around when he visits. This is a small town after all!
+ I’ll see him around when he visits. This is a small town, after all!
 
 #name;Don Roberto
 See? Reyes knows where the REAL men are at!
@@ -104,15 +104,12 @@ See? Reyes knows where the REAL men are at!
 #name;Victor
 Don, you always throw yourself at these youngins!
 
-#name;All
-More annoying cackling~
+#narrator
+They all laugh again. The sound is grating.
 
 -> Leave
 
 === Leave ===
-#you
-scratches head~
-
 #name;Don Luis
 Well, gracias for the supplies, hija. Tell Carmen I say hi.
 
