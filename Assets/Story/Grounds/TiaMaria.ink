@@ -9,10 +9,10 @@ TIA!!!
 Reyes! What a surprise! What are you doing here?
 
 #you
-Hi Tia! I’m just here to give you some supplies. Mom sent me.
+Hi, Tia! I’m just here to give you some supplies. Mom sent me.
 
 #name;Tia Maria
-Oh well come in, hija. We haven’t talked in a while.
+Oh! Well, come in, hija. We haven’t talked in a while.
 
  -> ThatsWeird
 
@@ -21,11 +21,11 @@ Oh well come in, hija. We haven’t talked in a while.
 Sorry, I wish I could stay, but I have to make a couple more deliveries.
 
 #name;Tia Maria
-Oh ok hija! You’re so kind to your mom, helping her out with deliveries! You know, she told me you wanted to cut off all your hair!
+Oh, okay, hija! You’re so kind to your mom, helping her out with deliveries! You know, she told me you wanted to cut off all your hair!
 
 #name;Tia Maria
 #stress;10
-I was so worried about seeing you again, but it looks like you haven’t cut it. It’s so long and beautiful, I wish I had hair like that. Every girl dreams of long hair like you!
+I was so worried about seeing you again, but it looks like you haven’t cut it. It’s so long and beautiful--I <i>wish</i> I had hair like that. Every girl dreams of having long hair like yours!
 
  -> WhatTheHell
 
@@ -34,19 +34,19 @@ I was so worried about seeing you again, but it looks like you haven’t cut it.
 My mom told you that?
 
 #name;Tia Maria
-Yes, hija. She talks so much about you. And I talk to her about your late cousin as well. You know how parents are.
+Yes, hija. She talks about you so much. And I talk to her about your late cousin as well. You know how parents are.
 
 #name;Tia Maria
-Speaking of parents, you’re still single right? No surprises?
+Speaking of parents, you’re still single, right? No surprises?
 
  -> GoodMood
 
 === GoodMood ===
 #you
- You already know I’m not looking for anyone Tia. 
+ You already know I’m not looking for anyone, Tia. 
  
 #name;Tia Maria
-  Good, I was just making sure you’re being responsible. I know your Mom wants you to get a partner, but it’s too early for that, ok? Live your life and stay young for as long as possible.
+  Good, I was just making sure you’re being responsible. I know your Mom wants you to get a partner, but it’s too early for that, okay? Live your life and stay young for as long as possible.
 
 #you
 Of course, Tia. Thank you for always looking out for me.
@@ -67,10 +67,10 @@ Those guys are only good for the streets, you know. Don’t stay around them too
 
 === LetsGo ===
 #you
-Well, uh , thank you, Tia. I’ll get going now, the bread is starting to get squished. I’ll come by and visit you soon! Say hi to everyone at home for me!
+Well, uh, thank you, Tia. I’ll get going now, the bread is starting to get squished. I’ll come by and visit you soon! Say hi to everyone at home for me!
 
 #name;Tia Maria
-Alright see you later, Reyes!
+Alright, see you later, Reyes!
 
 #end
 -> END
