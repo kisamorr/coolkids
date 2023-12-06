@@ -3539,17 +3539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1166145969 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2345360688597409728, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
-  m_PrefabInstance: {fileID: 1074718269516075448}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!850595691 &1223136393
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -3784,6 +3773,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9203217761117418758, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
   m_PrefabInstance: {fileID: 1074718269516075448}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1279215551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1148298036363894761, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1074718269516075448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1343850659
 Mesh:
   m_ObjectHideFlags: 0
@@ -7136,7 +7136,7 @@ PrefabInstance:
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: emotionBar
       value: 
-      objectReference: {fileID: 1166145969}
+      objectReference: {fileID: 1279215551}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: MessagingApp
       value: 

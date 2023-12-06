@@ -168,6 +168,7 @@ public class StoryManager : MonoBehaviour
 
             if (tag.StartsWith("stress;"))
             {
+                print("accumulating stress");
                 string[] parts = tag.Split(';');
                 string emotionNumber = parts[1];
                 int emotionValue;
