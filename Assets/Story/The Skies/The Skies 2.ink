@@ -63,7 +63,7 @@ No, the people who understand YOU are here.
  …
 
 #you
-#stress;100
+#stress;85
 Y’know, we can just get that drink another time. I’ll see you around Harper.
 
 #end 

@@ -188,7 +188,7 @@ public class StoryManager : MonoBehaviour
                 ExitStoryMode();
                 didSomething = true;
                 storyDone = true;
-                //lights.SetActive(true);
+                
             }
 
             if (tag.StartsWith("narrator"))

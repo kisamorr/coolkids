@@ -23,7 +23,7 @@ Reyes, it’s never going to be easy being who we are. The whole world hates peo
 Thank you…
 
 #name;Harper
-#stress:10
+#stress;10
 Besides, you don’t have to stay in that rundown town forever. Get your bag up and go. It’s freeing, trust me.
 
 #you

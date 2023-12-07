@@ -2,7 +2,7 @@
 
 === Monologue ===
 #you
-My hair. It's so long… <b>(Hit the space bar to continue.)</b>
+My hair. It's so long… <b>(Left Click to continue.)</b>
 
 
 #them
