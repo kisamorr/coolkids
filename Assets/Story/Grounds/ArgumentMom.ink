@@ -101,9 +101,9 @@ Reyes, I am your mother. You can’t be mad at me for talking about you.
 
 #you
 But it's more than that! You also...
+*[told Don Luis I was on the market!] -> ThoseGuys
 *[told Don Luis I want to move out!] -> TitasWrong
 *[told Don Luis that I'm <i>depressed!</i>] -> TitasWrong
-*[told Don Luis I was on the market!] -> ThoseGuys
 
 === TitasWrong ===
 #name;Carmen
@@ -135,8 +135,8 @@ Those clothes were enough for me. I need you to have standards for what you look
 
 #you
  Again with my appearance! You never leave me alone! You even told Tia Maria...
- *[that I look bad without makeup!] -> ThoseGuysWrong
  *[that I wanted to chop all my hair off!] -> Tia
+ *[that I look bad without makeup!] -> ThoseGuysWrong
  *[that I'm not skinny enough!] -> ThoseGuysWrong
  
  === ThoseGuysWrong ===

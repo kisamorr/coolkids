@@ -92,8 +92,8 @@ It's not even that bad, Reyes. We could have gone to a cheaper cafe. We'll go to
 
 #you
 Somewhere else isn't cheaper, either! For example...
-*[There aren't even any other cafes around here!] -> arg2wrong
 *[Every store at the mall is a designer brand!] -> arg3
+*[There aren't even any other cafes around here!] -> arg2wrong
 *[I'd have to go back home to buy food!] -> arg2wrong
 
 ===== arg2wrong =====
