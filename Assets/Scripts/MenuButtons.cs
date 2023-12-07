@@ -18,7 +18,7 @@ public class MenuButtons : MonoBehaviour
 
     public void restartGame()
     {
-        SceneManager.LoadScene("Grounds");
+        SceneManager.LoadScene("ReyesHouse");
         GameManager.instance.InventorySystem.SetActive(false);
     }
 

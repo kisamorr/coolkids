@@ -6,22 +6,19 @@ using UnityEngine.UI;
 using Ink.Runtime;
 using System.Linq;
 using TMPro;
-//using UnityEditor.Experimental.GraphView;
 using System.Runtime.ExceptionServices;
 
 public class StoryManager : MonoBehaviour
 {
     public InputActionReference continueAction;
     public static StoryManager Instance;
+    public LightTrigger lightTrigger;
     public TextAsset inkJson;
-    public TextAsset altInkJson;
     public TextMeshProUGUI rightText, leftText, midText, leftNameTagText, rightNameTagText;
     public Image rightProfile, leftProfile;
     public GameObject storyPanel, rightNameTag, leftNameTag;
-    //public Animator leftAnimator, rightAnimator;
     public bool storyIsPlaying { get; private set; }
     public bool storyDone = false;
-    //public BackgroundLibrary backgroundLibrary;
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
@@ -32,7 +29,6 @@ public class StoryManager : MonoBehaviour
         Instance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         storyIsPlaying = false;
@@ -44,8 +40,7 @@ public class StoryManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
         string[] options = new string[4];
 
@@ -125,8 +120,6 @@ public class StoryManager : MonoBehaviour
     void AdvanceStory()
     {
         string text = ourStory.Continue();
-        //Animator currentAnimator = null;
-        //GameObject currentBackground = null;
 
         foreach (string tag in ourStory.currentTags)
         {
@@ -169,24 +162,21 @@ public class StoryManager : MonoBehaviour
 
             if (tag.StartsWith("stress;"))
             {
+                print("accumulating stress");
                 string[] parts = tag.Split(';');
                 string emotionNumber = parts[1];
                 int emotionValue;
                 int.TryParse(emotionNumber, out emotionValue);
                 GameManager.instance.currentEmotion = GameManager.instance.currentEmotion - emotionValue;
                 didSomething = true;
-
-                if (GameManager.instance.currentEmotion <= 0)
-                {
-                    ourStory = new Story(altInkJson.text);
-                }
             }
 
             if (tag.StartsWith("end"))
             {
                 ExitStoryMode();
                 didSomething = true;
-                //lights.SetActive(true);
+                storyDone = true;
+                
             }
 
             if (tag.StartsWith("narrator"))
@@ -210,26 +200,9 @@ public class StoryManager : MonoBehaviour
                 Debug.Log("you should be hearing something here");
                 Debug.Log(soundName);
                 didSomething = true;
-            }
-
-            if (tag.StartsWith("anim;"))
-            {
-                string[] parts = tag.Split(';');
-                string animName = parts[1];
-
-                if (currentAnimator != null)
-                {
-                    currentAnimator.SetTrigger(animName);
-                    Debug.Log(animName);
-                }
-                else
-                {
-                    Debug.LogError("Anim tag found but without a character to use");
-                }
-
-                didSomething = true;
             }*/
 
+            
             if (!didSomething)
             {
                 Debug.LogError("$Couldn't interpret tag");

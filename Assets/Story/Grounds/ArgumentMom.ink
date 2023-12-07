@@ -3,7 +3,6 @@
 
 === main ===
 #you
-#stress;100
 Mom! I’m back!
  
 #name;Carmen
@@ -15,7 +14,7 @@ Yeah, I'm not feeling that great right now.
 #name;Carmen
  Did you talk to them or just deliver the food like a delivery boy?
  
- *[Yes] -> firstChoice
+ -> firstChoice
  
 === firstChoice ===
 
@@ -23,7 +22,7 @@ Yeah, I'm not feeling that great right now.
 I talked to them, Mom. I’m not rude.
 
 #name;Carmen
- Mhmm.
+ Mm-hm.
  
  #name;Carmen
  What's wrong with you? Why do you have that face?
@@ -43,34 +42,43 @@ I talked to them, Mom. I’m not rude.
 #name;Carmen
 I swear, all you know how to do is complain.
 
-*[...] -> secondChoice
+-> secondChoice
 
 === secondChoice ===
 #name;Carmen
-You never help me around the house, never ask me how I’m doing, you don’t even have a job and you complain to me about not having money.And now, I have to worry about how you dress like when you were 5.
+You never help me around the house, never ask me how I’m doing, you don’t even have a job and you complain to me about not having money. And now, I have to worry about how you dress like when you were five.
 
-*[That's not fair.] -> thirdChoice
+#you
+That's not fair.
+-> thirdChoice
 
 === thirdChoice ===
 #you
 I don’t complain about money! I told you about my student loans so I can get advice on how to pay them off.
-*[Continue] -> YouTalkAboutMe
 
-=== YouTalkAboutMe ===
 #you
-You don’t even worry about me, you just want things to say about me to others.
+You don't even worry about me, you just want things to say about me to others.
 
 #name;Carmen
-What?!
+<i>What?</i> What are you even talking about?
 
-*[Tita Andrea and Tita Angela] -> Titas
+#you
+<b>I should check my phone with the escape key if I need to remember what happened...</b>
 
-*[The guys in the street] -> ThoseGuys
+#you
+I'm saying you told Tita Andrea and Tita Angela...
+*[that you think I dress horribly!] -> Titas
+*[that you think I hate you!] -> initialWrong
+*[that I dropped out to spite you!] -> initialWrong
 
-*[Tia Maria] -> Tia
+=== initialWrong ===
+#name;Carmen
+What are you even talking about, Reyes? I never said anything like that.
 
-#end
-*[Exit] -> END
+#you
+#stress;20
+<i>Shit, I was wrong. I need to think that one over again...</i>
+-> thirdChoice
 
 === Titas ===
 #you
@@ -91,31 +99,54 @@ Mom, none of that matters. You crossed the line, how am I supposed to trust you 
 #name;Carmen
 Reyes, I am your mother. You can’t be mad at me for talking about you.
 
-*[But there's more...] -> YouTalkAboutMe
+#you
+But it's more than that! You also...
+*[told Don Luis I was on the market!] -> ThoseGuys
+*[told Don Luis I want to move out!] -> TitasWrong
+*[told Don Luis that I'm <i>depressed!</i>] -> TitasWrong
+
+=== TitasWrong ===
+#name;Carmen
+What are you even talking about, Reyes? I never said anything like that.
+
+#you
+#stress;20
+<i>Shit, I was wrong. I need to think that one over again...</i>
+-> Titas
 
 === ThoseGuys ===
 #you
 What about what you told those guys in the street?
 
 #you
-I am NOT looking for a boyfriend, and I am NOT trying to get anyone’s attention with my appearance. Do you know how that makes me feel when I hear all that?
+I'm NOT looking for a boyfriend, and I'm NOT trying to get anyone’s attention with my appearance. Do you know how that makes me feel when I hear that?
 
 #name;Carmen
-I understand if those men made you uncomfortable, but you are single mija! One of them mentioned their grandson coming to town soon and I mentioned you in case you wanted to meet him. 
+I understand if those men made you uncomfortable, but you're <i>single</i>, mija! One of them mentioned their grandson coming to town soon, and I mentioned you <i>just in case</i> you wanted to meet him. 
 
 #you
-Mom, I’ve told you before I am not looking for anyone right now. Why can’t you respect that? 
+Mom, I’ve told you before I'm not looking for anyone right now! Why can’t you respect that? 
 
 #name;Carmen
  Don’t talk to me like that, Reyes. After you got those terrible clothes, you dared to ask me to cut your hair, and I said no.
  
 #name;Carmen
-Those clothes were enough for me. I need you to have standards for what you look like Reyes. Such terrible things you put on…
+Those clothes were enough for me. I need you to have standards for what you look like, Reyes. Such terrible things you put on…
 
 #you
- Again, with my hair...
+ Again with my appearance! You never leave me alone! You even told Tia Maria...
+ *[that I wanted to chop all my hair off!] -> Tia
+ *[that I look bad without makeup!] -> ThoseGuysWrong
+ *[that I'm not skinny enough!] -> ThoseGuysWrong
  
- ->YouTalkAboutMe
+ === ThoseGuysWrong ===
+ #name;Carmen
+What are you even talking about, Reyes? I never said anything like that.
+
+#you
+#stress;20
+<i>Shit, I was wrong. I need to think that one over again...</i>
+-> ThoseGuysWrong
  
  === Tia ===
 #you
@@ -136,4 +167,4 @@ And she’s right, you’ll look terrible with short hair! You never listen to m
 #name;Carmen
 And your feelings get hurt too easily, mija, it's ridiculous! We’re only trying to take care of you!
 #end
-*[Storm out] -> END
+-> END

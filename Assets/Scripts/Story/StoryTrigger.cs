@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Ink.Runtime;
+using MoreMountains.Tools;
 
 public class StoryTrigger : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class StoryTrigger : MonoBehaviour
     public Note note;
     public Collectible collectible;
     public bool noteInvolved;
+    
+    public bool taskInvolved;
+    public GameObject taskCheck;
 
     private void Awake()
     {
@@ -84,6 +88,11 @@ public class StoryTrigger : MonoBehaviour
         if (noteInvolved == true)
         {
             note.ObtainNote();
+        }
+
+        if (taskInvolved == true)
+        {
+            taskCheck.SetActive(true);
         }
     }
 }

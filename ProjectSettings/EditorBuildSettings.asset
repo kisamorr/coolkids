@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Skies.unity
     guid: 03bd5187854b2a64aa41dd9d5e4f7bcb
+  - enabled: 0
+    path: Assets/Scenes/GroundsRedux.unity
+    guid: 295d7da5f82185c4badbcdc285cf4c5c
+  - enabled: 1
+    path: Assets/Scenes/ReyesHouseRedux.unity
+    guid: 0900d75518314fb40b5d3e2bcfa67b55
+  - enabled: 1
+    path: Assets/Scenes/ReyesHouseFinale.unity
+    guid: 220e677413b91f947aefa0e5a2e345f4
   m_configObjects: {}

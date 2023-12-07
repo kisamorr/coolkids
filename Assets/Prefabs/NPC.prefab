@@ -168,6 +168,8 @@ MonoBehaviour:
   note: {fileID: 0}
   collectible: {fileID: 0}
   noteInvolved: 0
+  taskInvolved: 0
+  taskCheck: {fileID: 0}
 --- !u!1001 &4436076581272814470
 PrefabInstance:
   m_ObjectHideFlags: 0

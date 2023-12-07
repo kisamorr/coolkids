@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class HarperDespawn : MonoBehaviour
 {
-    public GameObject Harper, HarperCollider, harperFollow;
+    public GameObject Harper, harperFollow;
     private void OnTriggerExit(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
         {
-            Harper.SetActive(false);
-            HarperCollider.SetActive(false);
             harperFollow.SetActive(true);
+            Harper.SetActive(false);
         }
     }
 }

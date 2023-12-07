@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class HarperTrigger : MonoBehaviour
 {
-    public GameObject Harper;
+    public GameObject Harper, StartCollider, EndCollider;
 
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
         {
             Harper.SetActive(true);
+            StartCollider.SetActive(false);
+            EndCollider.SetActive(true);
         }
     }
 
