@@ -42,6 +42,27 @@ The people who've seen me grow up in this town still constantly criticize me. It
 
 #you
 My own friend, who I'm supposed to relate to, is so different from me. She doesn't understand that I don't just have extra money to spend, but I can’t force her to understand that, especially when she's lived her whole life like that.
+-> arg1
+
+===== arg1 =====
+#name;Carmen
+I don't understand, mija.
+
+#you
+I just...
+*[don't know how to express myself here.] -> arg2
+*[don't feel like I fit in at all.] -> arg2
+*[stuff] -> arg2
+
+===== arg2 =====
+stuff here
+-> arg3
+
+===== arg3 =====
+stuff here
+-> end
+
+===== end =====
 
 #you
 I feel so disconnected from myself… I don’t know where I belong anymore. I just want to be treated like a person.
