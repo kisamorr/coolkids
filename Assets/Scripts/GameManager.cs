@@ -87,6 +87,11 @@ public class GameManager : MonoBehaviour
         {
             float emotionIncrease = 0.05f;
             currentEmotion = currentEmotion + emotionIncrease;
+
+            if (currentEmotion < 0)
+            {
+                currentEmotion = 0;
+            }
         }
     }
 

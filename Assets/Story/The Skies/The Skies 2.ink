@@ -52,6 +52,9 @@ Really? What about everything she’s done up until now? You really don’t thin
 
 #you
 Yes, of course! But I’m not going to hate her when I just want her to grow…
+-> arg1
+
+===== arg1 =====
 
 #name;Harper
 You don’t need to teach her to accept you, Reyes. The people who will understand you are HERE.
@@ -60,10 +63,76 @@ You don’t need to teach her to accept you, Reyes. The people who will understa
 No, the people who understand YOU are here.
 
 #name;Harper
- …
+What does that even <i>mean?</i>
 
 #you
-#stress;85
+Seriously, Harper? You don't even realize...
+*[that not everyone can spend $10 on a coffee.] -> arg2 
+*[how mean that barista was to me.] -> arg1wrong
+*[how bad your taste is.] -> arg1wrong
+
+===== arg1wrong =====
+#name;Harper
+#stress;20
+What are you even talking about, Reyes? That doesn't have anything to do with this.
+
+#you
+<i>Maybe that wasn't the best way to word that. Let me think about that one again...</i>
+-> arg1
+
+===== arg2 =====
+#name;Harper
+Okay, but like, not every coffee costs that much! I just got what I wanted. You didn't need to get one if you didn't want one.
+
+#you
+Harper, that's not what the problem is. I'm saying that <i>everything</i> here costs that much. You just don't see it.
+
+#name;Harper
+It's not even that bad, Reyes. We could have gone to a cheaper cafe. We'll go to a cheaper one next time, or we'll just go somewhere else.
+
+#you
+Somewhere else isn't cheaper, either! For example...
+*[There aren't even any other cafes around here!] -> arg2wrong
+*[Every store at the mall is a designer brand!] -> arg3
+*[I'd have to go back home to buy food!] -> arg2wrong
+
+===== arg2wrong =====
+#name;Harper
+#stress;20
+What are you even talking about, Reyes? That doesn't have anything to do with this.
+
+#you
+<i>Maybe that wasn't the best way to word that. Let me think about that one again...</i>
+-> arg2
+
+===== arg3 =====
+#you
+That "thrift store" you were talking about isn't even a thrift store, it's a secondhand boutique.
+
+#name;Harper
+That's like the same thing, Reyes. "Thrift" is secondhand.
+
+#you
+No, Harper, it's not. There's questions about financial accessibility, like ...
+*[You don't pay $40 at a thrift store.] -> endchunk
+*[Thrift stores carry different kinds of clothes.] -> arg3wrong
+*[There just aren't real thrift stores here.] -> arg3wrong
+
+===== arg3wrong =====
+#name;Harper
+#stress;20
+What are you even talking about, Reyes? That doesn't have anything to do with this.
+
+#you
+<i>Maybe that wasn't the best way to word that. Let me think about that one again...</i>
+-> arg3
+
+===== endchunk =====
+#name;Harper
+Reyes, I don't understand what you mean. Can you just calm down a bit and we can talk this over? Maybe over that drink.
+
+#you
+#stress;100
 Y’know, we can just get that drink another time. I’ll see you around Harper.
 
 #end 
