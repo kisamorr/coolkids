@@ -62,7 +62,17 @@ public class GameManager : MonoBehaviour
             {
                 print("active");
                 InventorySystem.SetActive(false);
-                Phone.SetActive(true);
+                //Phone.SetActive(true);
+                Time.timeScale = 1;
+
+                if (dialogueSystem.activeInHierarchy)
+                {
+                    Phone.SetActive(false);
+                }
+                else
+                {
+                    Phone.SetActive(true);
+                }
                 Time.timeScale = 1;
             }
 
@@ -87,6 +97,11 @@ public class GameManager : MonoBehaviour
         {
             float emotionIncrease = 0.05f;
             currentEmotion = currentEmotion + emotionIncrease;
+
+            if (currentEmotion < 0)
+            {
+                currentEmotion = 0;
+            }
         }
     }
 
