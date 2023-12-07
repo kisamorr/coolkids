@@ -2,7 +2,7 @@
 
 === main ===
 #you
-#stress;10
+#stress;5
 Harper, are you sure this place is affordable?
 
 #name;Harper
