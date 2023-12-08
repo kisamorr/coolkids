@@ -68,10 +68,25 @@ What does that even <i>mean?</i>
 #you
 Seriously, Harper? You don't even realize...
 *[that not everyone can spend $10 on a coffee.] -> arg2 
-*[how mean that barista was to me.] -> arg1wrong
-*[how bad your taste is.] -> arg1wrong
+*[how mean that barista was to me.] -> arg1wrong1
+*[how bad your taste is.] -> arg1wrong2
 
-===== arg1wrong =====
+===== arg1wrong1 =====
+#you
+You don't even realize how mean that barista was to me.
+
+#name;Harper
+#stress;20
+What are you even talking about, Reyes? That doesn't have anything to do with this.
+
+#you
+<i>Maybe that wasn't the best way to word that. Let me think about that one again...</i>
+-> arg1
+
+===== arg1wrong2 =====
+#you
+You don't even realize how bad your taste is.
+
 #name;Harper
 #stress;20
 What are you even talking about, Reyes? That doesn't have anything to do with this.
@@ -81,6 +96,9 @@ What are you even talking about, Reyes? That doesn't have anything to do with th
 -> arg1
 
 ===== arg2 =====
+#you
+You don't even realize that not everyone can spend $10 on a coffee.
+
 #name;Harper
 Okay, but like, not every coffee costs that much! I just got what I wanted. You didn't need to get one if you didn't want one.
 
@@ -93,10 +111,25 @@ It's not even that bad, Reyes. We could have gone to a cheaper cafe. We'll go to
 #you
 Somewhere else isn't cheaper, either! For example...
 *[Every store at the mall is a designer brand!] -> arg3
-*[There aren't even any other cafes around here!] -> arg2wrong
-*[I'd have to go back home to buy food!] -> arg2wrong
+*[There aren't even any other cafes around here!] -> arg2wrong1
+*[I'd have to go back home to buy food!] -> arg2wrong2
 
-===== arg2wrong =====
+===== arg2wrong1 =====
+#you
+For example--there aren't even any other cafes around here!
+
+#name;Harper
+#stress;20
+What are you even talking about, Reyes? That doesn't have anything to do with this.
+
+#you
+<i>Maybe that wasn't the best way to word that. Let me think about that one again...</i>
+-> arg2
+
+===== arg2wrong2 =====
+#you
+For example--I'd have to go back home to buy food!
+
 #name;Harper
 #stress;20
 What are you even talking about, Reyes? That doesn't have anything to do with this.
@@ -107,6 +140,9 @@ What are you even talking about, Reyes? That doesn't have anything to do with th
 
 ===== arg3 =====
 #you
+For example--every store at the mall is a designer brand!
+
+#you
 That "thrift store" you were talking about isn't even a thrift store, it's a secondhand boutique.
 
 #name;Harper
@@ -115,10 +151,25 @@ That's like the same thing, Reyes. "Thrift" is secondhand.
 #you
 No, Harper, it's not. There's questions about financial accessibility, like ...
 *[You don't pay $40 at a thrift store.] -> endchunk
-*[Thrift stores carry different kinds of clothes.] -> arg3wrong
-*[There just aren't real thrift stores here.] -> arg3wrong
+*[Thrift stores carry different kinds of clothes.] -> arg3wrong1
+*[There just aren't real thrift stores here.] -> arg3wrong2
 
-===== arg3wrong =====
+===== arg3wrong1 =====
+#you
+There's questions about financial accessibility, like... thrift stores carry different kinds of clothes.
+
+#name;Harper
+#stress;20
+What are you even talking about, Reyes? That doesn't have anything to do with this.
+
+#you
+<i>Maybe that wasn't the best way to word that. Let me think about that one again...</i>
+-> arg3
+
+===== arg3wrong2 =====
+#you
+There's questions about financial accessibility, like... there just aren't real thrift stores here.
+
 #name;Harper
 #stress;20
 What are you even talking about, Reyes? That doesn't have anything to do with this.
@@ -128,6 +179,9 @@ What are you even talking about, Reyes? That doesn't have anything to do with th
 -> arg3
 
 ===== endchunk =====
+#you
+There's questions about financial accessibility, like... you just don't pay $40 at a thrift store.
+
 #name;Harper
 Reyes, I don't understand what you mean. Can you just calm down a bit and we can talk this over? Maybe over that drink.
 

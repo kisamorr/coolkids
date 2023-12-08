@@ -68,10 +68,25 @@ You don't even worry about me, you just want things to say about me to others.
 #you
 I'm saying you told Tita Andrea and Tita Angela...
 *[that you think I dress horribly!] -> Titas
-*[that you think I hate you!] -> initialWrong
-*[that I dropped out to spite you!] -> initialWrong
+*[that you think I hate you!] -> initialWrong1
+*[that I dropped out to spite you!] -> initialWrong2
 
-=== initialWrong ===
+=== initialWrong1 ===
+#you
+I'm saying you told Tita Andrea and Tita Angela that you think I hate you!
+
+#name;Carmen
+What are you even talking about, Reyes? I never said anything like that.
+
+#you
+#stress;20
+<i>Shit, I was wrong. I need to think that one over again...</i>
+-> thirdChoice
+
+=== initialWrong2 ===
+#you
+I'm saying you told Tita Andrea and Tita Angela that I dropped out to spite you!
+
 #name;Carmen
 What are you even talking about, Reyes? I never said anything like that.
 
@@ -82,7 +97,10 @@ What are you even talking about, Reyes? I never said anything like that.
 
 === Titas ===
 #you
-I was talking to Tita Andrea and Tita Angela earlier. They told me that you told them about how I felt about clothes to embarrass me.
+I'm saying you told Tita Andrea and Tita Angela that you think I dress horribly!
+
+#you
+I was talking to them earlier. They told me that you told them about how I felt about clothes to embarrass me.
 
 #you
 I told you about that so that you’d keep it to yourself, but instead you tell the whole neighborhood.
@@ -102,10 +120,25 @@ Reyes, I am your mother. You can’t be mad at me for talking about you.
 #you
 But it's more than that! You also...
 *[told Don Luis I was on the market!] -> ThoseGuys
-*[told Don Luis I want to move out!] -> TitasWrong
-*[told Don Luis that I'm <i>depressed!</i>] -> TitasWrong
+*[told Don Luis I want to move out!] -> TitasWrong1
+*[told Don Luis that I'm <i>depressed!</i>] -> TitasWrong2
 
-=== TitasWrong ===
+=== TitasWrong1 ===
+#you
+You also told Don Luis I want to move out!
+
+#name;Carmen
+What are you even talking about, Reyes? I never said anything like that.
+
+#you
+#stress;20
+<i>Shit, I was wrong. I need to think that one over again...</i>
+-> Titas
+
+=== TitasWrong2 ===
+#you
+You also told Don Luis that I'm <i>depressed!</i>
+
 #name;Carmen
 What are you even talking about, Reyes? I never said anything like that.
 
@@ -116,7 +149,7 @@ What are you even talking about, Reyes? I never said anything like that.
 
 === ThoseGuys ===
 #you
-What about what you told those guys in the street?
+You also told Don Luis I was on the market!
 
 #you
 I'm NOT looking for a boyfriend, and I'm NOT trying to get anyone’s attention with my appearance. Do you know how that makes me feel when I hear that?
@@ -136,21 +169,36 @@ Those clothes were enough for me. I need you to have standards for what you look
 #you
  Again with my appearance! You never leave me alone! You even told Tia Maria...
  *[that I wanted to chop all my hair off!] -> Tia
- *[that I look bad without makeup!] -> ThoseGuysWrong
- *[that I'm not skinny enough!] -> ThoseGuysWrong
+ *[that I look bad without makeup!] -> ThoseGuysWrong1
+ *[that I'm not skinny enough!] -> ThoseGuysWrong2
  
- === ThoseGuysWrong ===
+ === ThoseGuysWrong1 ===
+ #you
+ You even told Tia Maria that I look bad without makeup!
+ 
  #name;Carmen
 What are you even talking about, Reyes? I never said anything like that.
 
 #you
 #stress;20
 <i>Shit, I was wrong. I need to think that one over again...</i>
--> ThoseGuysWrong
+-> ThoseGuys
+
+ === ThoseGuysWrong2 ===
+ #you
+ You even told Tia Maria that I'm not skinny enough!
+ 
+ #name;Carmen
+What are you even talking about, Reyes? I never said anything like that.
+
+#you
+#stress;20
+<i>Shit, I was wrong. I need to think that one over again...</i>
+-> ThoseGuys
  
  === Tia ===
 #you
-  Tia Maria told me you told her I want to cut it all off.
+  You even told Tia Maria that I wanted to chop all my hair off!
   
 #you
   I said I wanted to go mid length, not SHORT!
