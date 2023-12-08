@@ -42,12 +42,76 @@ The people who've seen me grow up in this town still constantly criticize me. It
 
 #you
 My own friend, who I'm supposed to relate to, is so different from me. She doesn't understand that I don't just have extra money to spend, but I can’t force her to understand that, especially when she's lived her whole life like that.
+-> arg1
+
+===== arg1 =====
+#name;Carmen
+I don't understand, mija.
 
 #you
+I just...
+*[don't know how to express myself here.] -> arg2
+*[don't feel like I fit in at all.] -> arg2
+*[feel like I'm not happy.] -> arg2
+
+===== arg2 =====
+#name;Carmen
+#stress;34
+Reyes, what do you mean? You have family here who takes care of you. Why are you feeling this way?
+
+#you
+I just-!
+
+#you 
+I don't wanna be here anymore, Mom. I just want to be in bed right now...
+
+#name;Carmen
+Is it because you don't have a job? I know I've been asking you about it, but I just want you to be able to have something to sustain yourself.
+
+#you 
+Mom, I <i>really<i/> don't want to talk about this right now.
+
+#name;Carmen
+But you're obviously so upset, mija. Please, help me understand.
+
+#you 
+Mom, I'm not going...
+*[to explain this to you right now!]-> arg3
+*[to tell you how to treat me better!]-> arg3
+*[to ask you to help me anymore.]-> arg3
+
+===== arg3 =====
+#name;Carmen
+#stress;26
+...what?
+
+#you
+I'm sorry...
+
+#name;Carmen
+Reyes, I'm your mother. 
+
+#narrator
+Carmen cups Reyes' cheek, wiping the tears away from their eyes.
+
+#name;Carmen
+I feel like I need to help you fix whatever is going on. Tell me how.
+
+#you 
+You can't, Mom. You made me feel this way...
+
+#you 
+Everyone made me feel this way. I don't need this help... I just...
+
+*[Don't feel like myself.]-> end
+
+===== end =====
+
+#you
+#stress;100
 I feel so disconnected from myself… I don’t know where I belong anymore. I just want to be treated like a person.
 
 #narrator
-#stress;100
 Reyes' outburst sends their heart into a frenzy. The only thing they can think of right now is to escape to their room.
 
 #end 

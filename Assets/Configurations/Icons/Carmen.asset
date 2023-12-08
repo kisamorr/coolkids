@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed6d5bf3480d0a40bc9d3cea7eebe89, type: 3}
   m_Name: Carmen
   m_EditorClassIdentifier: 
-  image: {fileID: -7272332370791766393, guid: 8a1f96c93a153e34a98b5f6dd6bbfebd, type: 3}
+  image: {fileID: 21300000, guid: 76a567168bf1f9340808e36f72fe0e1d, type: 3}
   characterName: Carmen

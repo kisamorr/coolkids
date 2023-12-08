@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed6d5bf3480d0a40bc9d3cea7eebe89, type: 3}
   m_Name: Tita Angela
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 0b9510d2790829140953392aae2b6679, type: 3}
+  image: {fileID: 21300000, guid: 05dd0e15f8e4ab84895be9aad22fc2f8, type: 3}
   characterName: Tita Angela
