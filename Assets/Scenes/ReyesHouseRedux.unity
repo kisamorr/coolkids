@@ -1208,6 +1208,22 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 598110260}
+    - target: {fileID: 1799261672311461276, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+      propertyPath: m_Height
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799261672311461276, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+      propertyPath: m_Center.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799261672311461276, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+      propertyPath: m_Center.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799261672311461276, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+      propertyPath: m_Center.z
+      value: -0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 1922583535692814241, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1324,7 +1340,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3504842864032321823, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
+    - {fileID: 6520460263979286371, guid: b60ca78b533b5b14cb85cd0b9dda8fda, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
