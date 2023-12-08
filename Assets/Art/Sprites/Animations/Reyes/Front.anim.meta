@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 00adb17ae6035444d8214fc79a135b23
+<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Front.anim.meta
+guid: 348af777957d5fc4c9fa1ed55578ba4e
+========
+guid: c133eb32421ceda49afb382037d42e9e
+>>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk front animation_Clip.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: a6fd08180444b6b49a070e25b614df77
+<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Back.anim.meta
+guid: f5e237690d5f2984bb4948312c1bb1f8
+========
+guid: fc1620b5570e9e7458ec3f1362596f5a
+>>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk back animation_Clip.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

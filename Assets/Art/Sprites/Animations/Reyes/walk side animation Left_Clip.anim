@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
+  m_Name: Left
+========
+  m_Name: walk side animation Left_Clip
+>>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
+  serializedVersion: 7
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
+      value: {fileID: 625252250, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 0.33333334
+      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 0.6666667
+      value: {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 1
+      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 1.3333334
+      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 1.6666666
+      value: {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - time: 2
+      value: {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+========
+      value: {fileID: -2687271377939393006, guid: a742db4417103254990b2af4c30ba69a, type: 3}
+    - time: 0.1
+      value: {fileID: 6348337137709550022, guid: a742db4417103254990b2af4c30ba69a, type: 3}
+    - time: 0.2
+      value: {fileID: -6499151370807620940, guid: a742db4417103254990b2af4c30ba69a, type: 3}
+    - time: 0.3
+      value: {fileID: 4555141837616024439, guid: a742db4417103254990b2af4c30ba69a, type: 3}
+    - time: 0.4
+      value: {fileID: 8652008401460520077, guid: a742db4417103254990b2af4c30ba69a, type: 3}
+    - time: 0.5
+      value: {fileID: -7619304635602089306, guid: a742db4417103254990b2af4c30ba69a, type: 3}
+    - time: 0.6
+      value: {fileID: -7619304635602089306, guid: a742db4417103254990b2af4c30ba69a, type: 3}
+>>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
+<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
+  m_SampleRate: 60
+========
+  m_SampleRate: 100
+>>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 625252250, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - {fileID: -1130141463, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+    - {fileID: -1289623375, guid: 27a6687780925904ba43758b2b75a220, type: 3}
+========
+    genericBindings: []
+    pptrCurveMapping: []
+>>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+<<<<<<<< HEAD:Assets/Art/Sprites/Animations/Reyes/Left.anim
+    m_StopTime: 2.0166667
+========
+    m_StopTime: 0.61
+>>>>>>>> dd13cef5ddc29f618dd5d4ff93168e7a7f52710c:Assets/Art/Sprites/Animations/Reyes/walk side animation Left_Clip.anim
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 0
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events: []
