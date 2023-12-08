@@ -10658,6 +10658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Harper: {fileID: 1072385817}
+  HarperCollider: {fileID: 0}
   harperFollow: {fileID: 1696729905}
 --- !u!114 &1072385831
 MonoBehaviour:
