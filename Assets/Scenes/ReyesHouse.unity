@@ -5565,6 +5565,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2094526436}
+    - target: {fileID: 3167467664291423036, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3581363037095482485, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5849,6 +5853,14 @@ PrefabInstance:
     - target: {fileID: 4966614415497560268, guid: ac2ee3f60101d0642b589b9da0bb5ef9, type: 3}
       propertyPath: m_Name
       value: Reyes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837395723183322615, guid: ac2ee3f60101d0642b589b9da0bb5ef9, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837395723183322615, guid: ac2ee3f60101d0642b589b9da0bb5ef9, type: 3}
+      propertyPath: runSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
