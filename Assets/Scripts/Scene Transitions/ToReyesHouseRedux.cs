@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class ToReyesHouseRedux : MonoBehaviour
 {
-    private void OnTriggerExit(Collider collider)
+    public PlayerMovement playerMovement;
+    public LevelChanger levelChanger;
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("ReyesHouseRedux", LoadSceneMode.Single);
+            playerMovement.move.Disable();
+            levelChanger.animator.SetTrigger("Fadeout");
         }
     }
 }

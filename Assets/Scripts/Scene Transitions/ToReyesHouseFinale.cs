@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class ToReyesHouseFinale : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider collider)
+    public PlayerMovement playerMovement;
+    public LevelChanger levelChanger;
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("ReyesHouseFinale", LoadSceneMode.Single);
+            playerMovement.move.Disable();
+            levelChanger.animator.SetTrigger("Fadeout");
         }
     }
 }

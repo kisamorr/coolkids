@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerInputActions playerControls;
-    private InputAction move;
+    public InputAction move;
     private InputAction jump;
     private InputAction look;
     private Vector3 moveDirection;
