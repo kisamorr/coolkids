@@ -50,11 +50,14 @@ I don't understand, mija.
 
 #you
 I just...
-*[don't know how to express myself here.] -> arg2
-*[don't feel like I fit in at all.] -> arg2
-*[feel like I'm not happy.] -> arg2
+*[don't know how to express myself here.] -> arg2var1
+*[don't feel like I fit in at all.] -> arg2var2
+*[feel like I'm not happy.] -> arg2var3
 
-===== arg2 =====
+===== arg2var1 =====
+#you
+I just don't know how to express myself here.
+
 #name;Carmen
 #stress;34
 Reyes, what do you mean? You have family here who takes care of you. Why are you feeling this way?
@@ -76,11 +79,131 @@ But you're obviously so upset, mija. Please, help me understand.
 
 #you 
 Mom, I'm not going...
-*[to explain this to you right now!]-> arg3
-*[to tell you how to treat me better!]-> arg3
-*[to ask you to help me anymore.]-> arg3
+*[to explain this to you right now!]-> arg3var1
+*[to tell you how to treat me better!]-> arg3var2
+*[to ask you to help me anymore.]-> arg3var3
 
-===== arg3 =====
+
+===== arg2var2 =====
+#you
+I just don't feel like I fit in at all.
+
+#name;Carmen
+#stress;34
+Reyes, what do you mean? You have family here who takes care of you. Why are you feeling this way?
+
+#you
+I just-!
+
+#you 
+I don't wanna be here anymore, Mom. I just want to be in bed right now...
+
+#name;Carmen
+Is it because you don't have a job? I know I've been asking you about it, but I just want you to be able to have something to sustain yourself.
+
+#you 
+Mom, I <i>really<i/> don't want to talk about this right now.
+
+#name;Carmen
+But you're obviously so upset, mija. Please, help me understand.
+
+#you 
+Mom, I'm not going...
+*[to explain this to you right now!]-> arg3var1
+*[to tell you how to treat me better!]-> arg3var2
+*[to ask you to help me anymore.]-> arg3var3
+
+===== arg2var3 =====
+#you
+I just feel like I'm not happy.
+
+#name;Carmen
+#stress;34
+Reyes, what do you mean? You have family here who takes care of you. Why are you feeling this way?
+
+#you
+I just-!
+
+#you 
+I don't wanna be here anymore, Mom. I just want to be in bed right now...
+
+#name;Carmen
+Is it because you don't have a job? I know I've been asking you about it, but I just want you to be able to have something to sustain yourself.
+
+#you 
+Mom, I <i>really<i/> don't want to talk about this right now.
+
+#name;Carmen
+But you're obviously so upset, mija. Please, help me understand.
+
+#you 
+Mom, I'm not going...
+*[to explain this to you right now!]-> arg3var1
+*[to tell you how to treat me better!]-> arg3var2
+*[to ask you to help me anymore.]-> arg3var3
+
+===== arg3var1 =====
+#you
+Mom, I'm not going to explain this to you right now!
+
+#name;Carmen
+#stress;26
+...what?
+
+#you
+I'm sorry...
+
+#name;Carmen
+Reyes, I'm your mother. 
+
+#narrator
+Carmen cups Reyes' cheek, wiping the tears away from their eyes.
+
+#name;Carmen
+I feel like I need to help you fix whatever is going on. Tell me how.
+
+#you 
+You can't, Mom. You made me feel this way...
+
+#you 
+Everyone made me feel this way. I don't need this help... I just...
+
+*[Don't feel like myself.]-> end
+
+
+===== arg3var2 =====
+#you
+Mom, I'm not going to tell you how to treat me better!
+
+#name;Carmen
+#stress;26
+...what?
+
+#you
+I'm sorry...
+
+#name;Carmen
+Reyes, I'm your mother. 
+
+#narrator
+Carmen cups Reyes' cheek, wiping the tears away from their eyes.
+
+#name;Carmen
+I feel like I need to help you fix whatever is going on. Tell me how.
+
+#you 
+You can't, Mom. You made me feel this way...
+
+#you 
+Everyone made me feel this way. I don't need this help... I just...
+
+*[Don't feel like myself.]-> end
+
+
+===== arg3var3 =====
+#you
+Mom, I'm not going to ask you to help me anymore.
+
 #name;Carmen
 #stress;26
 ...what?
@@ -106,6 +229,8 @@ Everyone made me feel this way. I don't need this help... I just...
 *[Don't feel like myself.]-> end
 
 ===== end =====
+#you
+I just don't feel like myself.
 
 #you
 #stress;100
