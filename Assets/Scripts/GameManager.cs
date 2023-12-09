@@ -14,17 +14,20 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI[] noteSlots;
 
     public GameObject player;
-    public GameObject InventorySystem;
+    public GameObject PauseMenu;
     public int itemsObtained = 0;
     public int notesObtained = 0;
 
-    public Button MessagingApp;
-    public Button MessagingAppExit;
+    public Button TaskManagerApp;
+    public Button TaskManagerAppExit;
     public Button NotesApp;
     public Button NotesAppExit;
-    public GameObject MessagingOpen;
+    public Button InventoryApp;
+    public Button InventoryAppExit;
+    public GameObject TaskManagerOpen;
     public GameObject NotesOpen;
-    public GameObject Phone, PhoneNotifIcon, MessageNotifIcon, NoteNotifIcon;
+    public GameObject InventoryOpen;
+    public GameObject Phone, PhoneNotifIcon, TaskManagerNotifIcon, NoteNotifIcon, InventoryNotifIcon;
     public GameObject dialogueSystem;
 
     public Image emotionBar;
@@ -46,24 +49,24 @@ public class GameManager : MonoBehaviour
         currentEmotion = maxEmotion;
         emotionUpdating = false;
 
-        MessagingApp.onClick.AddListener(openMessagingApp);
-        MessagingAppExit.onClick.AddListener(closeMessagingApp);
+        TaskManagerApp.onClick.AddListener(openTaskManagerApp);
+        TaskManagerAppExit.onClick.AddListener(closeTaskManagerApp);
         NotesApp.onClick.AddListener(openNotesApp);
         NotesAppExit.onClick.AddListener(closeNotesApp);
+        InventoryApp.onClick.AddListener(openInventoryApp);
+        InventoryAppExit.onClick.AddListener(closeInventoryApp);
     }
 
     void Update()
     {
         emotionBar.fillAmount = currentEmotion/maxEmotion;
-        // inventory can be opened and closed
+
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (InventorySystem.activeInHierarchy) // exits pause menu
+            if (PauseMenu.activeInHierarchy) // exits pause menu
             {
                 print("active");
-                InventorySystem.SetActive(false);
-                //Phone.SetActive(true);
-                Time.timeScale = 1;
+                PauseMenu.SetActive(false);
 
                 if (dialogueSystem.activeInHierarchy)
                 {
@@ -73,13 +76,11 @@ public class GameManager : MonoBehaviour
                 {
                     Phone.SetActive(true);
                 }
-                Time.timeScale = 1;
             }
 
-            else if (!InventorySystem.activeInHierarchy) // opens pause menu
+            else if (!PauseMenu.activeInHierarchy) // opens pause menu
             {
-                InventorySystem.SetActive(true);
-                Time.timeScale = 0;
+                PauseMenu.SetActive(true);
 
                 if (PhoneNotifIcon.activeInHierarchy)
                 {
@@ -105,19 +106,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void openMessagingApp()
+    public void openTaskManagerApp()
     {
-        MessagingOpen.SetActive(true);
+        TaskManagerOpen.SetActive(true);
 
-        if (MessageNotifIcon.activeInHierarchy)
+        if (TaskManagerNotifIcon.activeInHierarchy)
         {
-            MessageNotifIcon.SetActive(false);
+            TaskManagerNotifIcon.SetActive(false);
         }
     }
 
-    public void closeMessagingApp()
+    public void closeTaskManagerApp()
     {
-        MessagingOpen.SetActive(false);
+        TaskManagerOpen.SetActive(false);
     }
 
     public void openNotesApp()
@@ -133,5 +134,20 @@ public class GameManager : MonoBehaviour
     public void closeNotesApp()
     {
         NotesOpen.SetActive(false);
+    }
+
+    public void openInventoryApp()
+    {
+        InventoryOpen.SetActive(true);
+
+        if (InventoryNotifIcon.activeInHierarchy)
+        {
+            InventoryNotifIcon.SetActive(false);
+        }
+    }
+
+    public void closeInventoryApp()
+    {
+        InventoryOpen.SetActive(false);
     }
 }
