@@ -19,7 +19,7 @@ public class MenuButtons : MonoBehaviour
     public void restartGame()
     {
         SceneManager.LoadScene("ReyesHouse");
-        GameManager.instance.InventorySystem.SetActive(false);
+        GameManager.instance.PauseMenu.SetActive(false);
     }
 
     public void exitGame()

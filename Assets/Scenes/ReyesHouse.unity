@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: bdd32ae504d9caf47856698a678e9b10, type: 2}
   m_LightingSettings: {fileID: 1434417448}
 --- !u!196 &4
 NavMeshSettings:
@@ -324,9 +324,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1553969727}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 639017987}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: emotionBar
       value: 
       objectReference: {fileID: 1559936770}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: InventoryApp
+      value: 
+      objectReference: {fileID: 1156515102}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: MessagingApp
       value: 
@@ -335,6 +343,10 @@ PrefabInstance:
       propertyPath: NotesAppExit
       value: 
       objectReference: {fileID: 37333403}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: InventoryOpen
+      value: 
+      objectReference: {fileID: 1156515100}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: MessagingOpen
       value: 
@@ -348,6 +360,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 241541250}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: TaskManagerApp
+      value: 
+      objectReference: {fileID: 1373126856}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: dialogueSystem
       value: 
       objectReference: {fileID: 477881399}
@@ -356,6 +372,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 639017987}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: TaskManagerOpen
+      value: 
+      objectReference: {fileID: 144914135}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: InventoryAppExit
+      value: 
+      objectReference: {fileID: 1156515099}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: MessageNotifIcon
       value: 
       objectReference: {fileID: 1777853621}
@@ -363,6 +387,18 @@ PrefabInstance:
       propertyPath: MessagingAppExit
       value: 
       objectReference: {fileID: 1201224414}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: InventoryNotifIcon
+      value: 
+      objectReference: {fileID: 1156515101}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: TaskManagerAppExit
+      value: 
+      objectReference: {fileID: 1201224414}
+    - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
+      propertyPath: TaskManagerNotifIcon
+      value: 
+      objectReference: {fileID: 1777853621}
     - target: {fileID: 596975095942385376, guid: db4319361be638e49b944e775e43ee7c, type: 3}
       propertyPath: noteSlots.Array.size
       value: 3
@@ -3192,6 +3228,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1900853569412482917, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1976093079413255954, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -3230,6 +3270,10 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
     - target: {fileID: 3045239929727368938, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091466347863669601, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3157814478525160886, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
@@ -3246,6 +3290,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3157814478525160886, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479708507523357717, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3655024681307092914, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
@@ -3359,6 +3407,10 @@ PrefabInstance:
     - target: {fileID: 5878695992390389811, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6398152199495922677, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7149882763077287938, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_Sprite
@@ -3619,6 +3671,38 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1156515097}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786312481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1156515099 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6757688674343014939, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1156515097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1156515100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6760288619138205627, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1156515097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1156515101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 172992878509666422, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1156515097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1156515102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8089374420929220241, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+  m_PrefabInstance: {fileID: 1156515097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
