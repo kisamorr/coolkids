@@ -48,6 +48,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e6dfb207c9b764ba7525c4575e9328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 41a6f863-5e33-44fa-ae14-a80c810b5d8b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   gravity: -20
   speed: 4
   runSpeed: 6

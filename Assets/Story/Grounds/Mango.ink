@@ -34,6 +34,10 @@ Reyes stares at the bowl of fruit for a while.
 
 #narrator
 Eat the mango?
-*[Yes.]
-#end
+
+*[Yes.] -> end
+
+=== end ===
+#end 
 ->END
+

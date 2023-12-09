@@ -6,25 +6,17 @@ using UnityEngine.InputSystem;
 
 public class ToStart : MonoBehaviour
 {
-    public StoryManager storyManager;
+    public StoryTrigger storyTrigger;
     public PlayerMovement playerMovement;
     public LevelChanger levelChanger;
 
     void Update()
     {
-        if (storyManager.storyDone == true)
+        if (storyTrigger.dialogueFinished == true)
         {
+            Debug.Log("Switched scenes.");
             playerMovement.move.Disable();
             levelChanger.animator.SetTrigger("Fade2Start");
         }
     }
-
-    /*private void OnTriggerEnter(Collider collision)
-    {
-        if (storyTrigger.dialogueFinished = true && collision.gameObject.tag == "Player")
-        {
-            //playerMovement.move.Disable();
-            levelChanger.animator.SetTrigger("Fade2Start");
-        }
-    }*/
 }

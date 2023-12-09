@@ -2232,6 +2232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelChanger
       objectReference: {fileID: 0}
+    - target: {fileID: 3747518689592361811, guid: 07a662339e9c793499a5155089d5a601, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2095613535559976258, guid: 07a662339e9c793499a5155089d5a601, type: 3}
     - {fileID: 2143441948781972209, guid: 07a662339e9c793499a5155089d5a601, type: 3}
@@ -6037,10 +6041,6 @@ PrefabInstance:
     - target: {fileID: 1017998566327592679, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1059711145802437026, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 1148298036363894761, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_Type
