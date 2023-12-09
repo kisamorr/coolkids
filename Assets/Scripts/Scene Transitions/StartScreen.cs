@@ -9,6 +9,7 @@ public class StartScreen : MonoBehaviour
     public Button start, exit, controls, controlsExit;
     public GameObject controlPanel;
     public Animator fadeTransitions;
+    public AudioSource audioClip;
 
     void Start()
     {
@@ -21,16 +22,19 @@ public class StartScreen : MonoBehaviour
     void startGame()
     {
         fadeTransitions.SetTrigger("FadeOut2");
+        audioClip.Play();
     }
 
     void quitGame()
     {
         Application.Quit();
+        audioClip.Play();
     }
 
     void viewControls()
     {
         controlPanel.SetActive(true);
+        audioClip.Play();
     }
 
     void exitControls()
