@@ -6,12 +6,15 @@ using UnityEngine.InputSystem;
 
 public class ToReyesHouseRedux : MonoBehaviour
 {
+     public StoryTrigger storyTrigger;
     public PlayerMovement playerMovement;
     public LevelChanger levelChanger;
-    private void OnTriggerEnter(Collider collision)
+
+    void Update()
     {
-        if (collision.gameObject.tag == "Player")
+        if (storyTrigger.dialogueFinished == true)
         {
+            Debug.Log("Switched scenes.");
             playerMovement.move.Disable();
             levelChanger.animator.SetTrigger("Fadeout");
         }

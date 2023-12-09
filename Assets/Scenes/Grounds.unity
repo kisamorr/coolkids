@@ -1388,6 +1388,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8897488056160261379, guid: 8b78b895a55b61a4fb9564efd1132642, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897488056160261379, guid: 8b78b895a55b61a4fb9564efd1132642, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d43951c38b0ca4b329acb90471f6368f, type: 3}
@@ -3997,12 +4001,12 @@ GameObject:
   - component: {fileID: 1084375090}
   - component: {fileID: 1084375089}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GetOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1084375088
 Transform:
   m_ObjectHideFlags: 0
@@ -4047,7 +4051,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7783,7 +7787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 761427180965005103, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2264996597959462824, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
       propertyPath: StoryManager
@@ -7867,6 +7871,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 761427180965005103, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5868840933611972949}
+    - targetCorrespondingSourceObject: {fileID: 761427180965005103, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5868840933611972951}
   m_SourcePrefab: {fileID: 100100000, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
 --- !u!1 &3102873934173647042
 GameObject:
@@ -8269,6 +8276,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3772310513513178676, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
   m_PrefabInstance: {fileID: 3046123697333225573}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5868840933611972951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015202607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47287af79a8973640bad692774b442d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  argumentTrigger: {fileID: 5868840933611972949}
+  getOut: {fileID: 1084375087}
 --- !u!114 &6011938527403485482
 MonoBehaviour:
   m_ObjectHideFlags: 0
