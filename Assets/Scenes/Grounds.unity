@@ -6231,7 +6231,8 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2264996597959462824, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1287308377634401829, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
     m_AddedGameObjects: []
@@ -7805,7 +7806,8 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2264996597959462824, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1287308377634401829, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
     m_AddedGameObjects: []
@@ -9059,6 +9061,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2264996597959462824, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
+      propertyPath: visualCue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264996597959462824, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
       propertyPath: StoryManager
       value: 
       objectReference: {fileID: 571619162}
@@ -9106,7 +9112,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2264996597959462824, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1287308377634401829, guid: 76dd699ffd5d27e499866e9e6803735b, type: 3}
     m_AddedGameObjects: []
