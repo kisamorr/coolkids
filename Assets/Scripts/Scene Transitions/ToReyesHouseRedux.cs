@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class ToReyesHouseRedux : MonoBehaviour
 {
-     public StoryTrigger storyTrigger;
+    public StoryTrigger storyTrigger;
     public PlayerMovement playerMovement;
     public LevelChanger levelChanger;
 
@@ -18,5 +18,10 @@ public class ToReyesHouseRedux : MonoBehaviour
             playerMovement.move.Disable();
             levelChanger.animator.SetTrigger("Fadeout");
         }
+    }
+
+    public void SceneChangeDefault()
+    {
+        levelChanger.animator.SetTrigger("Fadeout");
     }
 }

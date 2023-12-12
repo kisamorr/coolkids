@@ -16,4 +16,8 @@ public class ToHidingPlace : MonoBehaviour
             levelChanger.animator.SetTrigger("Fadeout");
         }
     }
+    public void SceneChangeDefault()
+    {
+        levelChanger.animator.SetTrigger("Fadeout");
+    }
 }
