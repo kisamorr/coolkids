@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class StoryManager : MonoBehaviour
 {
-    public InputActionReference continueAction;
+    //public InputActionReference continueAction;
     public static StoryManager Instance;
     public LightTrigger lightTrigger;
     public TextAsset inkJson;
@@ -36,7 +36,7 @@ public class StoryManager : MonoBehaviour
         ourStory = new Story(inkJson.text);
         AdvanceStory();
 
-        continueAction.action.performed += (a) => OnOptionClicked(0);
+        //continueAction.action.performed += (a) => OnOptionClicked(0);
 
     }
 
@@ -57,7 +57,30 @@ public class StoryManager : MonoBehaviour
         }
 
         SetupOptions(options);
-        
+
+        // new through end of function
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        {
+            currentOption++;
+            if (currentOption >= ourStory.currentChoices.Count)
+            {
+                currentOption = 0;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+        {
+            currentOption--;
+            if (currentOption < 0)
+            {
+                currentOption = ourStory.currentChoices.Count - 1;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            OnOptionClicked(currentOption);
+        }
     }
 
     public void EnterStoryMode(TextAsset inkJSON)
@@ -96,7 +119,6 @@ public class StoryManager : MonoBehaviour
                 }
             }
         }
-        
     }
 
     public void OnOptionClicked(int option)
