@@ -6857,6 +6857,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 121037126}
+    - target: {fileID: 1446074543835901504, guid: ac2ee3f60101d0642b589b9da0bb5ef9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1951084194, guid: 27a6687780925904ba43758b2b75a220, type: 3}
     - target: {fileID: 2313248784595213397, guid: ac2ee3f60101d0642b589b9da0bb5ef9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.3
