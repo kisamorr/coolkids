@@ -3203,6 +3203,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 205784168167484726, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
+    - target: {fileID: 205784168167484726, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8622609320651469480, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
+    - target: {fileID: 205784168167484726, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 617410644305058182, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: phone
       value: 
@@ -3222,6 +3234,10 @@ PrefabInstance:
     - target: {fileID: 1017998566327592679, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059711145802437026, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 1684473807917191312, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_fontAsset
@@ -3391,6 +3407,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5277052203619449788, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
+    - target: {fileID: 5277052203619449788, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8622609320651469480, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
+    - target: {fileID: 5277052203619449788, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5878695992390389811, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -3438,6 +3466,18 @@ PrefabInstance:
     - target: {fileID: 7593662652338689622, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_Color.r
       value: 0.33962262
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659257669662522703, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
+    - target: {fileID: 7659257669662522703, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8622609320651469480, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
+    - target: {fileID: 7659257669662522703, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7814917881200987484, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: inkJson
@@ -3653,7 +3693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9119459205765302128, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9203217761117418758, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_IsActive
@@ -6067,6 +6107,26 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1740097200}
+    - target: {fileID: 3930776104946934524, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930776104946934524, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930776104946934524, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930776104946934524, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930776104946934524, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.918
+      objectReference: {fileID: 0}
     - target: {fileID: 3963281243914146753, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6203,6 +6263,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 421298558}
+    - target: {fileID: 7520445903917371649, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.10917288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520445903917371649, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.10917288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520445903917371649, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.3773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520445903917371649, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280032352
+      objectReference: {fileID: 0}
     - target: {fileID: 7668220639246456253, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
       propertyPath: m_Mesh
       value: 

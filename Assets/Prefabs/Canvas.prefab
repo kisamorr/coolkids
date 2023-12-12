@@ -6877,7 +6877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1039101361128492738, guid: efae7ec963ddafa4a94736ba0d77aa6b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4935336361506568610, guid: efae7ec963ddafa4a94736ba0d77aa6b, type: 3}
       propertyPath: m_fontSize
@@ -6953,7 +6953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9102244708669544464, guid: efae7ec963ddafa4a94736ba0d77aa6b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 49
+      value: 109
       objectReference: {fileID: 0}
     - target: {fileID: 9102244708669544464, guid: efae7ec963ddafa4a94736ba0d77aa6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

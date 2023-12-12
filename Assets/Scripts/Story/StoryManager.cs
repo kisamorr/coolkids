@@ -7,6 +7,7 @@ using Ink.Runtime;
 using System.Linq;
 using TMPro;
 using System.Runtime.ExceptionServices;
+using UnityEngine.SceneManagement;
 
 public class StoryManager : MonoBehaviour
 {
@@ -22,7 +23,6 @@ public class StoryManager : MonoBehaviour
     public Story ourStory;
     public OptionUI[] optionUI;
     int currentOption;
-    //public GameObject lights;
 
     void Awake()
     {
@@ -187,21 +187,6 @@ public class StoryManager : MonoBehaviour
                 midText.color = Color.black;
                 didSomething = true;
             }
-
-            /*if (tag.StartsWith("sound;"))
-            {
-                // "sound;music_octo"
-                string[] parts = tag.Split(';');
-                // ["sound", "music_octo"]
-                string soundName = parts[1];
-                // "music_octo"
-
-                SoundManager.instance.PlaySound(soundName);
-                Debug.Log("you should be hearing something here");
-                Debug.Log(soundName);
-                didSomething = true;
-            }*/
-
             
             if (!didSomething)
             {
