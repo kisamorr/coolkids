@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4965a75daf9399142b19991ab7c1b4b4
+guid: 0213ffcc8cf336c499d548112a7c129b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Chocolate Donuts
+  - Pantry
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

@@ -898,7 +898,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec73ba711356f0746992817fe399738d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continueAction: {fileID: -5362078006123382955, guid: e62b04c5409a52541927ec49c1aa02d7, type: 3}
   lightTrigger: {fileID: 0}
   inkJson: {fileID: 4900000, guid: 36e44a8b68febc54d8b7cc5d68056603, type: 3}
   rightText: {fileID: 3157814478525160886}
@@ -1587,6 +1586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionText: {fileID: 2647231154713426314}
+  selectionIndicator: {fileID: 0}
+  backgroundImage: {fileID: 0}
 --- !u!1 &1636790157996086059
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,7 +6025,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Inventory
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6088,7 +6089,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -14.01993, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8557580176825469202

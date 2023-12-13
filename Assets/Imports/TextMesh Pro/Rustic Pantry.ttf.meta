@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b6920ac2efb959479fdfed2e83fcbaa
+guid: 528a0890495c4e94f877f742e98428be
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - KG Red Hands
+  - Rustic Pantry
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

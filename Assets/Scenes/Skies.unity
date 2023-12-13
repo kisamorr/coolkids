@@ -2621,6 +2621,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6404048080998427711, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 802634fab8d903345aefa43f82b8e272, type: 2}
+    - target: {fileID: 6404048080998427711, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7133288724780206455, guid: 90a065daebc3b79419ccd4d8b08ca5f8, type: 3}
       propertyPath: m_text
       value: Go with Harper inside the mall.
@@ -4439,6 +4447,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2025572622}
+    - target: {fileID: 1007143347491976381, guid: c266e96732d38544f9199a7e0b998684, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4162599861057809011, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
     - target: {fileID: 1123736614351494837, guid: c266e96732d38544f9199a7e0b998684, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4579,6 +4591,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 729799576}
+    - target: {fileID: 7276375809188751869, guid: c266e96732d38544f9199a7e0b998684, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
+    - target: {fileID: 7276375809188751869, guid: c266e96732d38544f9199a7e0b998684, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4162599861057809011, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
+    - target: {fileID: 7276375809188751869, guid: c266e96732d38544f9199a7e0b998684, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7449533042347153845, guid: c266e96732d38544f9199a7e0b998684, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -12050,6 +12074,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1954944304}
+    - target: {fileID: 577159157743459665, guid: 22ff2db125b736041a5ae45a800bffc8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4162599861057809011, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
     - target: {fileID: 580578667863367760, guid: 22ff2db125b736041a5ae45a800bffc8, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -12225,6 +12253,18 @@ PrefabInstance:
     - target: {fileID: 6017615763262658214, guid: 22ff2db125b736041a5ae45a800bffc8, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356999755865714853, guid: 22ff2db125b736041a5ae45a800bffc8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
+    - target: {fileID: 6356999755865714853, guid: 22ff2db125b736041a5ae45a800bffc8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4162599861057809011, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
+    - target: {fileID: 6356999755865714853, guid: 22ff2db125b736041a5ae45a800bffc8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6415225197312840458, guid: 22ff2db125b736041a5ae45a800bffc8, type: 3}
       propertyPath: m_Mesh
@@ -13964,10 +14004,26 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1116893306}
+    - target: {fileID: 3978274854859580205, guid: fbada62dd5dfe344fb0fc777fd95ba3a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4162599861057809011, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
     - target: {fileID: 3996251982133160857, guid: fbada62dd5dfe344fb0fc777fd95ba3a, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 575599448}
+    - target: {fileID: 4151932105248428718, guid: fbada62dd5dfe344fb0fc777fd95ba3a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
+    - target: {fileID: 4151932105248428718, guid: fbada62dd5dfe344fb0fc777fd95ba3a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4162599861057809011, guid: 4f96af80ec5a83a40bc73db8d8f3f5dc, type: 2}
+    - target: {fileID: 4151932105248428718, guid: fbada62dd5dfe344fb0fc777fd95ba3a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4228172300064249555, guid: fbada62dd5dfe344fb0fc777fd95ba3a, type: 3}
       propertyPath: m_Mesh
       value: 
