@@ -72,7 +72,7 @@ I don't wanna be here anymore, Mom. I just want to be in bed right now...
 Is it because you don't have a job? I know I've been asking you about it, but I just want you to be able to have something to sustain yourself.
 
 #you 
-Mom, I <i>really<i/> don't want to talk about this right now.
+Mom, I <i>really</i> don't want to talk about this right now.
 
 #name;Carmen
 But you're obviously so upset, mija. Please, help me understand.
@@ -131,7 +131,7 @@ I don't wanna be here anymore, Mom. I just want to be in bed right now...
 Is it because you don't have a job? I know I've been asking you about it, but I just want you to be able to have something to sustain yourself.
 
 #you 
-Mom, I <i>really don't want to talk about this right now.
+Mom, I <i>really</i> don't want to talk about this right now.
 
 #name;Carmen
 But you're obviously so upset, mija. Please, help me understand.

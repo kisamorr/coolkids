@@ -6485,7 +6485,7 @@ PrefabInstance:
       objectReference: {fileID: 2094526436}
     - target: {fileID: 3167467664291423036, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3292277646979798808, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
       propertyPath: levelChanger
@@ -6651,6 +6651,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1740097200}
+    - target: {fileID: 6747629299103777811, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7093357143850642412, guid: 84ac121cd73c4de44b031c77b688931d, type: 3}
       propertyPath: m_Mesh
       value: 
